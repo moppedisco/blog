@@ -1552,11 +1552,28 @@ hr {
   width: 100px;
 }
 h3 {
-  margin: 0 0 10px;
+  margin: 0 0 14px;
 }
 .page {
   margin: 0;
-  padding-left: 100px;
+  padding: 0 20px;
+  max-width: none;
+}
+@media (min-width: 760px) {
+  .page {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 960px) {
+  .page {
+    padding: 0 0 0 100px;
+    max-width: 760px;
+  }
+}
+.site-foot {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+  color: #ddd;
 }
 .logo {
   width: 50px;
@@ -1564,14 +1581,25 @@ h3 {
   border-radius: 100px;
 }
 .nav {
-  padding: 20px 0;
-  margin-bottom: 80px;
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+  margin-bottom: 56px;
   border-bottom: 1px solid #eee;
 }
 .nav .page {
   max-width: none;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 760px) {
+  .nav .page {
+    padding: 0 50px;
+  }
+}
+@media (min-width: 960px) {
+  .nav .page {
+    padding: 0 100px;
+  }
 }
 .nav a {
   border-bottom: none;
@@ -1589,7 +1617,7 @@ h3 {
 }
 .blog-post-list ul {
   list-style: none;
-  margin: 0 0 40px;
+  margin: 0 0 56px;
 }
 .blog-post-list time {
   margin-right: 5px;
@@ -1599,10 +1627,19 @@ h3 {
   font-weight: bold;
 }
 .intro h1 + p {
-  margin-bottom: 60px;
+  margin-bottom: 56px;
   font-size: 26px;
 }
 .post .meta {
   color: #999;
+  margin: -28px 0 0;
+}
+.base-listing h2 {
   margin: 0;
+}
+.base-listing h2 a {
+  border-bottom-color: #fff;
+}
+.base-listing h2 a:hover {
+  border-bottom-color: #000;
 }

@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+/* Setup */
+@import "EF-CSS-FRAMEWORK/defaults";
+@import "_vars";
+@import "EF-CSS-FRAMEWORK/init";
+
+a { 
+	border-bottom: 2px solid #000; 
+	padding-botton: 2px; 
+	-webkit-transition: border 0.2s;
+	-moz-transition: border 0.2s;
+	-ms-transition: border 0.2s;
+	-o-transition: border 0.2s;
+	transition: border 0.2s;
+}
+
+a:hover { 
+	border-bottom-color: #fff; 
+	text-decoration: none; 
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ddd;
+	width: 100px;
+}
+
+h3 { margin: 0 0 10px; }
+
+.page {
+	margin: 0;
+	padding-left: 100px;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	border-radius: 100px;	
+}
+
+.nav {
+	padding: 20px 0;
+	margin-bottom: 80px;
+	border-bottom: 1px solid #eee;
+}
+
+.nav .page {
+	max-width: none;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.nav a {
+	border-bottom: none;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: @headings-font-family-secondary;
+}
+
+.twitter-follow-button {
+	float: right;
+	margin: 8px 0 0;
+}
+
+.nav a + a {
+	margin-left: 30px;
+}
+
+.blog-post-list ul {
+	list-style: none;
+	margin: 0 0 40px;
+}
+
+.blog-post-list time {
+	margin-right: 5px;
+}
+
+.blog-post-list a {
+	margin-left: 5px;
+	font-weight: bold;
+}
+
+.intro h1 + p {
+	margin-bottom: 	60px;
+	font-size: 26px;	
+}
+
+.post h1 {
+	// margin: 0;
+}
+
+.post .meta {
+	color: #999;
+	margin: 0;
+}

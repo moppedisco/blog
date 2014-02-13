@@ -3,11 +3,15 @@ layout: default
 title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+<article class="intro">
+	<h1>Hello.</h1>
+	<p>My name is <i>Yacine Belarbi</i> and i'm frontend developer interested in design beyond the visuals. I craft products that are a joy to both users, developers and cats alike.</p>		
+</article>
+<div class="blog-post-list">
+	<h3>Posts</h3>
+	<ul>
+	{% for post in site.posts %}
+		<li><time>{{ post.date | date: "%B %d, %Y" }}</time> &raquo; <a class="delta" href="{{ post.url }}">{{ post.title }}</a></li>
+	{% endfor %}
+	</ul>
 </div>

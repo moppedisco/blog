@@ -51,9 +51,13 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 }
 
 .logo {
+	border: none;
+}
+
+.logo img {
 	width: 50px;
 	height: 50px;
-	border-radius: 100px;	
+	border-radius: 100px;
 }
 
 .nav {
@@ -79,11 +83,17 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 }
 
 .nav a {
-	border-bottom: none;
+	border-bottom-color: #fff;
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: bold;
 	font-family: @headings-font-family-secondary;
+	padding: 6px 0;
+}
+
+.nav a.active,
+.nav a:hover {
+	border-bottom-color: #000;
 }
 
 .twitter-follow-button {
@@ -112,6 +122,11 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 .intro h1 + p {
 	margin-bottom: 	@base-spacing-unit*2px;
 	font-size: 26px;
+}
+
+.intro .cats {
+	vertical-align: top;
+	margin: 0 5px;
 }
 
 .post h1 {

@@ -1,17 +1,23 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Yacine Belarbi - Frontend developer
 ---
-
 <article class="intro">
-	<h1>Hello.</h1>
-	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <i>cats</i> alike.</p>		
+	<h1 title="Hello." id="greeting">Hello.</h1>
+	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/cat.gif" width="37" alt="cats"> alike.</p>		
 </article>
 <div class="blog-post-list">
-	<h3>Posts</h3>
+	<h3>Latest articles</h3>
 	<ul>
 	{% for post in site.posts %}
 		<li><time>{{ post.date | date: "%B %d, %Y" }}</time> &raquo; <a class="delta" href="{{ post.url }}">{{ post.title }}</a></li>
 	{% endfor %}
 	</ul>
 </div>
+<script>
+	var greetings = Array("Hello.","Bonjour.","Grüezi.");
+	var greeting = greetings[Math.floor(Math.random()*greetings.length)];	
+	
+	var element = document.getElementById("greeting");
+	element.innerHTML = greeting;
+</script>

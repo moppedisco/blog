@@ -5,9 +5,51 @@
 @import "_vars";
 @import "EF-CSS-FRAMEWORK/init";
 
+@font-face {
+	font-family: 'entypo';
+	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
+	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot?#iefix') format('embedded-opentype'),
+	url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.woff') format('woff'),
+	url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.ttf') format('truetype'),
+	url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.svg#entypo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'entypo-social';
+	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot');
+	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot?#iefix') format('embedded-opentype'),
+	url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.woff') format('woff'),
+	url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.ttf') format('truetype'),
+	url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.svg#entypo-social') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+	font-family: 'entypo';
+	.font-size(45);
+}
+
+.icon-social {
+	font-family: 'entypo-social';
+	.font-size(45);
+}
+
+a.icon {
+	border: none;
+	padding: 0;
+}
+
+main[role=main]{
+	min-height: 350px;
+}
+
 a { 
 	border-bottom: 2px solid #000; 
 	padding-botton: 2px; 
+	text-decoration: none;
 	-webkit-transition: border 0.2s;
 	-moz-transition: border 0.2s;
 	-ms-transition: border 0.2s;
@@ -135,7 +177,7 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 
 .post .meta {
 	color: #999;
-	margin: -28px 0 0;
+	margin: -16px 0 -12px;
 }
 
 .post h1 a {
@@ -148,10 +190,6 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 .base-listing h2 { margin-bottom: 5px; }
 .base-listing h2 a { border-bottom-color: #fff; }
 .base-listing h2 a:hover { border-bottom-color: #000; }
-
-
-
-
 
 
 

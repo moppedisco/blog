@@ -4,7 +4,7 @@ title: Yacine Belarbi - Frontend developer
 ---
 <article class="intro">
 	<h1 title="Hello." id="greeting">Hello.</h1>
-	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/cat.gif" width="37" alt="cats"> alike.</p>		
+	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/cat.png" width="37" alt="cats"> alike.</p>		
 </article>
 <div class="blog-post-list">
 	<h3>Latest articles</h3>
@@ -15,9 +15,31 @@ title: Yacine Belarbi - Frontend developer
 	</ul>
 </div>
 <script>
-	var greetings = Array("Hello.","Bonjour.","Grüezi.");
-	var greeting = greetings[Math.floor(Math.random()*greetings.length)];	
-	
-	var element = document.getElementById("greeting");
+	//var greetings = Array("Hello.","Bonjour.","Grüezi.");
+	//var greeting = greetings[Math.floor(Math.random()*greetings.length)];	
+	var userLang = navigator.language || navigator.userLanguage,
+		element = document.getElementById("greeting"),
+		greeting;
+
+	switch (userLang) {
+		case "sv":
+			greeting="Tjena.";
+			break;
+		case "en":
+			greeting="Hello.";
+			break;
+		case "de":
+			greeting="Grüezi.";
+			break;
+		case "fr":
+			greeting="Bonjour.";
+			break;
+		case "el":
+			greeting="Γειά.";
+			break;
+		default:
+			greeting="Hello.";
+	}
+
 	element.innerHTML = greeting;
 </script>

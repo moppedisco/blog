@@ -9,14 +9,14 @@
     2.$BASE
 \*------------------------------------*/
 
-@base-font-size:    18;
-@base-line-height:  28;
+@base-font-size:    16;
+@base-line-height:  32;
 @base-ui-color:     #ccc;
 
 @link-color:        #333;
 
 @body-bg:           #fff;
-@text-color:        #333;
+@text-color:        #292929;
 
 /*------------------------------------*\
     3.$TYPOGRAPHY
@@ -24,11 +24,11 @@
 
 @font-family-base:        @font-family-serif; // font set on <html> tag
 
-@font-family-sans-serif:  'PT Sans', sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-sans-serif:  'Helvetica Neue', Helvetica, Arial, sans-serif;
+@font-family-serif:       'Merriweather', Georgia, serif;
 
-@headings-font-family:    @headings-font-family-secondary;
-@headings-font-family-secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+@headings-font-family:    @font-family-serif;
+@headings-font-family-secondary: @font-family-sans-serif;
 // Headings
 // -------------------------
 
@@ -36,16 +36,16 @@
 @mega-size:         60;
 @kilo-size:         48;
 
-@h1-size:           42; // .alpha
+@h1-size:           36; // .alpha
 @h1-font:      		@headings-font-family;
 
-@h2-size:           28; // .beta
+@h2-size:           22; // .beta
 @h2-font: 			@headings-font-family; 
 
-@h3-size:           20; // .gamma
+@h3-size:           18; // .gamma
 @h3-font: 			@headings-font-family;
 
-@h4-size:           18; // .delta
+@h4-size:           16; // .delta
 @h4-font: 			@headings-font-family;
 
 @h5-size:           16; // .epsilon

@@ -5,6 +5,9 @@
 @import "_vars";
 @import "EF-CSS-FRAMEWORK/init";
 
+h1 { margin-bottom: @half-spacing-unit*1px; }
+h2 { margin: 0; font-weight: normal; }
+h3 { margin: 0; }
 @font-face {
 	font-family: 'entypo';
 	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
@@ -27,6 +30,7 @@
 	font-style: normal;
 }
 
+
 .icon {
 	font-family: 'entypo';
 	.font-size(45);
@@ -43,7 +47,7 @@ a.icon {
 }
 
 main[role=main]{
-	min-height: 350px;
+	min-height: 330px;
 }
 
 a { 
@@ -68,8 +72,6 @@ hr {
 	width: 100px;
 }
 
-h3 { margin: 0 0 @half-spacing-unit*1px; }
-
 .page {
 	margin: 0;
 	padding: 0 20px;
@@ -92,6 +94,24 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 	color: #ddd;
 }
 
+.site-foot a {  
+	-webkit-transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-ms-transition: color 0.2s;
+	-o-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.site-foot .page {  
+	padding-left: 90px;
+}
+
+
+
+.site-foot a:hover {  
+	color: #999;
+}
+
 .logo {
 	border: none;
 }
@@ -107,6 +127,7 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 	.soft--bottom;
 	margin-bottom: @base-spacing-unit*2px;
 	border-bottom: 1px solid #eee;
+	background: url(../images/alchemy.gif) -69px -190px;
 }
 
 .nav .page {
@@ -125,7 +146,7 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 }
 
 .nav a {
-	border-bottom-color: #fff;
+	border-bottom-color: transparent;
 	text-transform: uppercase;
 	font-size: 13px;
 	font-weight: bold;
@@ -154,6 +175,7 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 
 .blog-post-list time {
 	margin-right: 5px;
+	color: #999;
 }
 
 .blog-post-list a {
@@ -163,7 +185,6 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 
 .intro h1 + p {
 	margin-bottom: 	@base-spacing-unit*2px;
-	font-size: 26px;
 }
 
 .intro .cats {
@@ -172,12 +193,16 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 }
 
 .post h1 {
-	// margin: 0;
+	margin: 0;
+}
+
+.post h2 {
+	font-weight: bold;
 }
 
 .post .meta {
 	color: #999;
-	margin: -16px 0 -12px;
+	margin: -20px 0 -12px;
 }
 
 .post h1 a {
@@ -188,6 +213,7 @@ h3 { margin: 0 0 @half-spacing-unit*1px; }
 }
 
 .base-listing h2 { margin-bottom: 5px; }
+.base-listing h2 + p { color: #999; }
 .base-listing h2 a { border-bottom-color: #fff; }
 .base-listing h2 a:hover { border-bottom-color: #000; }
 

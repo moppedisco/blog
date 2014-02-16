@@ -1,13 +1,13 @@
 ---
 layout: default
-title: Yacine Belarbi - Frontend developer
+title: Yacine Belarbi
 ---
 <article class="intro">
 	<h1 title="Hello." id="greeting">Hello.</h1>
-	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/cat.png" width="37" alt="cats"> alike.</p>		
+	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/cat.png" width="28" alt="cats"> alike.</p>		
 </article>
 <div class="blog-post-list">
-	<h3>Latest articles</h3>
+	<h2>Latest articles</h2>
 	<ul>
 	{% for post in site.posts %}
 		<li><time>{{ post.date | date: "%B %d, %Y" }}</time> &raquo; <a class="delta" href="{{ post.url }}">{{ post.title }}</a></li>

@@ -449,7 +449,7 @@ table {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1.125em / 1.5555555555555556 Georgia, "Times New Roman", Times, serif;
+  font: 1em / 2 'Merriweather', Georgia, serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -470,7 +470,7 @@ html {
 }
 body {
   background: #ffffff;
-  color: #333333;
+  color: #292929;
 }
 h1,
 h2,
@@ -597,85 +597,85 @@ fieldset,
 figure,
 pre,
 .media {
-  margin-bottom: 28px;
-  margin-bottom: 1.5555555555555556rem;
+  margin-bottom: 32px;
+  margin-bottom: 2rem;
 }
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-bottom: 26px;
-  margin-bottom: 1.4444444444444444rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 /*------------------------------------*\
     $HEADINGS
 \*------------------------------------*/
 h1,
 .alpha {
-  font-size: 42px;
-  font-size: 2.3333333333333335rem;
-  line-height: 1.3333333333333333;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 1.7777777777777777;
+  font-family: 'Merriweather', Georgia, serif;
 }
 h2,
 .beta {
-  font-size: 28px;
-  font-size: 1.5555555555555556rem;
-  line-height: 1;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  font-size: 1.375rem;
+  line-height: 1.4545454545454546;
+  font-family: 'Merriweather', Georgia, serif;
 }
 h3,
 .gamma {
-  font-size: 20px;
-  font-size: 1.1111111111111112rem;
-  line-height: 1.4;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.7777777777777777;
+  font-family: 'Merriweather', Georgia, serif;
 }
 h4,
 .delta {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5555555555555556;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 2;
+  font-family: 'Merriweather', Georgia, serif;
 }
 h5,
 .epsilon {
   font-size: 16px;
-  font-size: 0.8888888888888888rem;
-  line-height: 1.75;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  font-family: 'Merriweather', Georgia, serif;
 }
 h6,
 .zeta {
   font-size: 14px;
-  font-size: 0.7777777777777778rem;
-  line-height: 2;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  line-height: 2.2857142857142856;
+  font-family: 'Merriweather', Georgia, serif;
 }
 .giga {
   font-size: 96px;
-  font-size: 5.333333333333333rem;
+  font-size: 6rem;
   line-height: 96px;
 }
 .mega {
   font-size: 60px;
-  font-size: 3.3333333333333335rem;
+  font-size: 3.75rem;
   line-height: 60px;
 }
 .kilo {
   font-size: 48px;
-  font-size: 2.6666666666666665rem;
+  font-size: 3rem;
   line-height: 48px;
 }
 .milli {
   font-size: 12px;
-  font-size: 0.6666666666666666rem;
+  font-size: 0.75rem;
   line-height: 12px;
 }
 .micro {
   font-size: 10px;
-  font-size: 0.5555555555555556rem;
+  font-size: 0.625rem;
   line-height: 10px;
 }
 /*------------------------------------*\
@@ -686,7 +686,7 @@ table {
 }
 th,
 td {
-  padding: 7px;
+  padding: 8px;
   text-align: left;
 }
 /*------------------------------------*\
@@ -706,8 +706,8 @@ li > ol {
 ul,
 ol,
 dd {
-  margin-left: 56px;
-  margin-left: 3.111111111111111rem;
+  margin-left: 64px;
+  margin-left: 4rem;
 }
 /**
  * Objects and abstractions
@@ -808,50 +808,50 @@ dd {
  * Add/remove margins
  */
 .push {
-  margin: 28px !important;
+  margin: 32px !important;
 }
 .push--top {
-  margin-top: 28px !important;
+  margin-top: 32px !important;
 }
 .push--right {
-  margin-right: 28px !important;
+  margin-right: 32px !important;
 }
 .push--bottom {
-  margin-bottom: 28px !important;
+  margin-bottom: 32px !important;
 }
 .push--left {
-  margin-left: 28px !important;
+  margin-left: 32px !important;
 }
 .push--ends {
-  margin-top: 28px !important;
-  margin-bottom: 28px !important;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
 }
 .push--sides {
-  margin-right: 28px !important;
-  margin-left: 28px !important;
+  margin-right: 32px !important;
+  margin-left: 32px !important;
 }
 .push-half {
-  margin: 14px !important;
+  margin: 16px !important;
 }
 .push-half--top {
-  margin-top: 14px !important;
+  margin-top: 16px !important;
 }
 .push-half--right {
-  margin-right: 14px !important;
+  margin-right: 16px !important;
 }
 .push-half--bottom {
-  margin-bottom: 14px !important;
+  margin-bottom: 16px !important;
 }
 .push-half--left {
-  margin-left: 14px !important;
+  margin-left: 16px !important;
 }
 .push-half--ends {
-  margin-top: 14px !important;
-  margin-bottom: 14px !important;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
 }
 .push-half--sides {
-  margin-right: 14px !important;
-  margin-left: 14px !important;
+  margin-right: 16px !important;
+  margin-left: 16px !important;
 }
 .flush {
   margin: 0!important;
@@ -880,50 +880,50 @@ dd {
  * Add/remove paddings
  */
 .soft {
-  padding: 28px !important;
+  padding: 32px !important;
 }
 .soft--top {
-  padding-top: 28px !important;
+  padding-top: 32px !important;
 }
 .soft--right {
-  padding-right: 28px !important;
+  padding-right: 32px !important;
 }
 .soft--bottom {
-  padding-bottom: 28px !important;
+  padding-bottom: 32px !important;
 }
 .soft--left {
-  padding-left: 28px !important;
+  padding-left: 32px !important;
 }
 .soft--ends {
-  padding-top: 28px !important;
-  padding-bottom: 28px !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
 }
 .soft--sides {
-  padding-right: 28px !important;
-  padding-left: 28px !important;
+  padding-right: 32px !important;
+  padding-left: 32px !important;
 }
 .soft-half {
-  padding: 14px !important;
+  padding: 16px !important;
 }
 .soft-half--top {
-  padding-top: 14px !important;
+  padding-top: 16px !important;
 }
 .soft-half--right {
-  padding-right: 14px !important;
+  padding-right: 16px !important;
 }
 .soft-half--bottom {
-  padding-bottom: 14px !important;
+  padding-bottom: 16px !important;
 }
 .soft-half--left {
-  padding-left: 14px !important;
+  padding-left: 16px !important;
 }
 .soft-half--ends {
-  padding-top: 14px !important;
-  padding-bottom: 14px !important;
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
 }
 .soft-half--sides {
-  padding-right: 14px !important;
-  padding-left: 14px !important;
+  padding-right: 16px !important;
+  padding-left: 16px !important;
 }
 .hard {
   padding: 0!important;
@@ -972,7 +972,7 @@ input[type="url"],
 input[type="number"],
 textarea {
   width: 100%;
-  padding: 28;
+  padding: 32;
   border: 1px solid #cccccc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1032,7 +1032,7 @@ select:focus {
   margin-left: -18px;
 }
 select {
-  padding: 28;
+  padding: 32;
   border: 1px solid #cccccc;
   height: 26px;
   display: block;
@@ -1371,14 +1371,14 @@ Created:    2012-04-11
 .media__img,
 .media .img {
   float: left;
-  margin-right: 28px;
+  margin-right: 32px;
 }
 /**
      * Reversed image location (right instead of left).
      */
 .media__img--rev {
   float: right;
-  margin-left: 28px;
+  margin-left: 32px;
 }
 .media__img img,
 .media__img--rev img {
@@ -1507,6 +1507,16 @@ Created:    2012-04-11
   width: 300px;
   _margin-left: -3px;
 }
+h1 {
+  margin-bottom: 16px;
+}
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+h3 {
+  margin: 0;
+}
 @font-face {
   font-family: 'entypo';
   src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
@@ -1524,13 +1534,13 @@ Created:    2012-04-11
 .icon {
   font-family: 'entypo';
   font-size: 45px;
-  font-size: 2.5rem;
+  font-size: 2.8125rem;
   line-height: 45px;
 }
 .icon-social {
   font-family: 'entypo-social';
   font-size: 45px;
-  font-size: 2.5rem;
+  font-size: 2.8125rem;
   line-height: 45px;
 }
 a.icon {
@@ -1538,7 +1548,7 @@ a.icon {
   padding: 0;
 }
 main[role=main] {
-  min-height: 350px;
+  min-height: 330px;
 }
 a {
   border-bottom: 2px solid #000;
@@ -1559,9 +1569,6 @@ hr {
   border-top: 1px solid #ddd;
   width: 100px;
 }
-h3 {
-  margin: 0 0 14px;
-}
 .page {
   margin: 0;
   padding: 0 20px;
@@ -1579,9 +1586,22 @@ h3 {
   }
 }
 .site-foot {
-  padding-top: 28px !important;
-  padding-bottom: 28px !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
   color: #ddd;
+}
+.site-foot a {
+  -webkit-transition: color 0.2s;
+  -moz-transition: color 0.2s;
+  -ms-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.site-foot .page {
+  padding-left: 90px;
+}
+.site-foot a:hover {
+  color: #999;
 }
 .logo {
   border: none;
@@ -1592,10 +1612,11 @@ h3 {
   border-radius: 100px;
 }
 .nav {
-  padding-top: 28px !important;
-  padding-bottom: 28px !important;
-  margin-bottom: 56px;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
+  margin-bottom: 64px;
   border-bottom: 1px solid #eee;
+  background: url(../images/alchemy.gif) -69px -190px;
 }
 .nav .page {
   max-width: none;
@@ -1613,7 +1634,7 @@ h3 {
   }
 }
 .nav a {
-  border-bottom-color: #fff;
+  border-bottom-color: transparent;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: bold;
@@ -1633,26 +1654,32 @@ h3 {
 }
 .blog-post-list ul {
   list-style: none;
-  margin: 0 0 56px;
+  margin: 0 0 64px;
 }
 .blog-post-list time {
   margin-right: 5px;
+  color: #999;
 }
 .blog-post-list a {
   margin-left: 5px;
   font-weight: bold;
 }
 .intro h1 + p {
-  margin-bottom: 56px;
-  font-size: 26px;
+  margin-bottom: 64px;
 }
 .intro .cats {
   vertical-align: top;
   margin: 0 5px;
 }
+.post h1 {
+  margin: 0;
+}
+.post h2 {
+  font-weight: bold;
+}
 .post .meta {
   color: #999;
-  margin: -16px 0 -12px;
+  margin: -20px 0 -12px;
 }
 .post h1 a {
   font-size: 18px;
@@ -1662,6 +1689,9 @@ h3 {
 }
 .base-listing h2 {
   margin-bottom: 5px;
+}
+.base-listing h2 + p {
+  color: #999;
 }
 .base-listing h2 a {
   border-bottom-color: #fff;

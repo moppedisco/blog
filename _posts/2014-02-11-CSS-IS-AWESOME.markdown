@@ -5,7 +5,7 @@ date:   2014-02-11 12:53:24
 categories: jekyll update
 ---
 
-Saying “no” is hard, even if it’s to a close friend. In a professional environment, however, it can be important and often far more difficult. So how do you soften the blow of a straight “no” answer? Say yes… and offer something more!
+Saying “no” is hard, even if it’s to a close friend.
 
 ###The Hard Way
 

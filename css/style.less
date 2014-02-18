@@ -5,6 +5,13 @@
 @import "_vars";
 @import "EF-CSS-FRAMEWORK/init";
 
+
+*, 
+*:before, 
+*:after {
+	-webkit-font-smoothing: antialiased;
+}
+
 h1 { margin-bottom: @half-spacing-unit*1px; }
 h2 { margin: 0; font-weight: normal; }
 h3 { margin: 0; }
@@ -128,6 +135,7 @@ hr {
 	margin-bottom: @base-spacing-unit*2px;
 	border-bottom: 1px solid #eee;
 	background: url(../images/alchemy.gif) -69px -190px;
+	box-shadow: inset 0px -1px 10px #ccc;
 }
 
 .nav .page {

@@ -470,7 +470,7 @@ html {
 }
 body {
   background: #ffffff;
-  color: #292929;
+  color: #333333;
 }
 h1,
 h2,
@@ -1507,6 +1507,11 @@ Created:    2012-04-11
   width: 300px;
   _margin-left: -3px;
 }
+*,
+*:before,
+*:after {
+  -webkit-font-smoothing: antialiased;
+}
 h1 {
   margin-bottom: 16px;
 }
@@ -1617,6 +1622,7 @@ hr {
   margin-bottom: 64px;
   border-bottom: 1px solid #eee;
   background: url(../images/alchemy.gif) -69px -190px;
+  box-shadow: inset 0px -1px 10px #cccccc;
 }
 .nav .page {
   max-width: none;

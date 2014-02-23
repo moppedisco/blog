@@ -1,8 +1,23 @@
 <footer class="site-foot" role="footer">
 	<div class="page">
+		<span>© 2014 Yacine Belarbi</span>
 		<a target="_blank" title="Mail" href="mailto:yacbel@gmail.com" class="icon">✉</a>
 		<a target="_blank" title="Github" href="https://github.com/moppedisco/" class="icon icon-social"></a>
 		<a target="_blank" title="Twitter" href="https://twitter.com/moppedisco" class="icon icon-social"></a>
 		<a target="_blank" title="LinkedIn" href="http://ch.linkedin.com/in/yacinebelarbi" class="icon icon-social"></a>
 	</div>
 </footer>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	var links = window.document.getElementsByTagName("a"),
+		linkcount = links.length;
+
+	for ( var i = 0; i < linkcount; i++) {
+		var color = '#'+Math.round(0xffffff * Math.random()).toString(16);
+		links[i].style.color = color;
+		links[i].style.borderColor = color;
+
+	}
+});
+
+</script>

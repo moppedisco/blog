@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "CSS is awesome"
+title:  "CSS preprocessers - the bad parts"
 date:   2014-02-11 12:53:24
-categories: jekyll update
+categories: CSS preprocessers
 ---
 
-Saying “no” is hard, even if it’s to a close friend.
+With great power, comes great responsiblity.
 
 ###The Hard Way
 

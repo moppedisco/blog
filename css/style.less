@@ -54,11 +54,12 @@ a.icon {
 }
 
 main[role=main]{
-	min-height: 330px;
+	min-height: 520px;
+	padding-top: 60px;
 }
 
 a { 
-	border-bottom: 2px solid #000; 
+	border-bottom: 2px solid #fff; 
 	padding-botton: 2px; 
 	text-decoration: none;
 	-webkit-transition: border 0.2s;
@@ -69,7 +70,7 @@ a {
 }
 
 a:hover { 
-	border-bottom-color: #fff; 
+	border-bottom-color: #fff !important; 
 	text-decoration: none; 
 }
 
@@ -98,11 +99,13 @@ hr {
 .site-foot {
 	.soft--top;
 	.soft--bottom;
-	color: #ddd;
+	color: #ccc;
+	text-align: right;
 }
 
 .site-foot a {  
-	color: #aaa;
+	color: #ccc !important;
+	border-color: #fff !important;
 	-webkit-transition: color 0.2s;
 	-moz-transition: color 0.2s;
 	-ms-transition: color 0.2s;
@@ -110,8 +113,15 @@ hr {
 	transition: color 0.2s;
 }
 
+.site-foot a:hover {  
+	color: #999 !important;
+}
+
+.site-foot span { float: left; padding: 8px 0; }
+
 .site-foot .page {  
-	padding-left: 90px;
+	padding: 0 100px;
+	max-width: none;
 }
 
 
@@ -131,12 +141,9 @@ hr {
 }
 
 .nav {
-	.soft--top;
-	.soft--bottom;
-	margin-bottom: @base-spacing-unit*2px;
+	padding-top: 22px;
+	padding-bottom: 22px;
 	border-bottom: 1px solid #eee;
-	background: url(../images/alchemy.gif) -69px -190px;
-	box-shadow: inset 0px -1px 10px #ccc;
 }
 
 .nav .page {
@@ -160,12 +167,19 @@ hr {
 	font-size: 13px;
 	font-weight: bold;
 	font-family: @headings-font-family-secondary;
-	padding: 6px 0;
+	display: inline-block;
+	color: #000 !important;
+	border-color: #fff !important;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
 .nav a.active,
 .nav a:hover {
-	border-bottom-color: #000;
+	border-bottom-color: #000 !important;
 }
 
 .twitter-follow-button {

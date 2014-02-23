@@ -1553,7 +1553,7 @@ a.icon {
   padding: 0;
 }
 main[role=main] {
-  min-height: 520px;
+  min-height: 420px;
   padding-top: 60px;
 }
 a {
@@ -1588,12 +1588,13 @@ hr {
 @media (min-width: 960px) {
   .page {
     padding: 0 0 0 100px;
-    max-width: 760px;
+    max-width: 900px;
   }
 }
 .site-foot {
   padding-top: 32px !important;
   padding-bottom: 32px !important;
+  margin-top: 120px;
   color: #ccc;
   text-align: right;
 }
@@ -1676,7 +1677,7 @@ hr {
 }
 .blog-post-list ul {
   list-style: none;
-  margin: 0 0 64px;
+  margin: 0;
 }
 .blog-post-list time {
   margin-right: 5px;

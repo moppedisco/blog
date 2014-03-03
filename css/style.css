@@ -449,7 +449,7 @@ table {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1em / 2 'Merriweather', Georgia, serif;
+  font: 1.0625em / 1.8823529411764706 'Merriweather', Georgia, serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -598,7 +598,7 @@ figure,
 pre,
 .media {
   margin-bottom: 32px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.8823529411764706rem;
 }
 /**
  * `hr` elements only take up a few pixels, so we need to give them special
@@ -606,7 +606,7 @@ pre,
  */
 hr {
   margin-bottom: 30px;
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.7647058823529411rem;
 }
 /*------------------------------------*\
     $HEADINGS
@@ -614,68 +614,68 @@ hr {
 h1,
 .alpha {
   font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 2.1176470588235294rem;
   line-height: 1.7777777777777777;
   font-family: 'Merriweather', Georgia, serif;
 }
 h2,
 .beta {
   font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 1.2941176470588236rem;
   line-height: 1.4545454545454546;
   font-family: 'Merriweather', Georgia, serif;
 }
 h3,
 .gamma {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.0588235294117647rem;
   line-height: 1.7777777777777777;
   font-family: 'Merriweather', Georgia, serif;
 }
 h4,
 .delta {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.9411764705882353rem;
   line-height: 2;
   font-family: 'Merriweather', Georgia, serif;
 }
 h5,
 .epsilon {
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.9411764705882353rem;
   line-height: 2;
   font-family: 'Merriweather', Georgia, serif;
 }
 h6,
 .zeta {
   font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 0.8235294117647058rem;
   line-height: 2.2857142857142856;
   font-family: 'Merriweather', Georgia, serif;
 }
 .giga {
   font-size: 96px;
-  font-size: 6rem;
+  font-size: 5.647058823529412rem;
   line-height: 96px;
 }
 .mega {
   font-size: 60px;
-  font-size: 3.75rem;
+  font-size: 3.5294117647058822rem;
   line-height: 60px;
 }
 .kilo {
   font-size: 48px;
-  font-size: 3rem;
+  font-size: 2.823529411764706rem;
   line-height: 48px;
 }
 .milli {
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.7058823529411765rem;
   line-height: 12px;
 }
 .micro {
   font-size: 10px;
-  font-size: 0.625rem;
+  font-size: 0.5882352941176471rem;
   line-height: 10px;
 }
 /*------------------------------------*\
@@ -707,7 +707,7 @@ ul,
 ol,
 dd {
   margin-left: 64px;
-  margin-left: 4rem;
+  margin-left: 3.764705882352941rem;
 }
 /**
  * Objects and abstractions
@@ -1490,7 +1490,7 @@ Created:    2012-04-11
 }
 .page {
   margin: 0 auto;
-  max-width: 760px;
+  max-width: 900px;
   _text-align: left;
   /* wraps other template elems to set width */
   /* text-align IE5.5 */
@@ -1515,10 +1515,6 @@ Created:    2012-04-11
 h1 {
   margin-bottom: 16px;
 }
-h2 {
-  margin: 0;
-  font-weight: normal;
-}
 h3 {
   margin: 0;
 }
@@ -1539,13 +1535,13 @@ h3 {
 .icon {
   font-family: 'entypo';
   font-size: 45px;
-  font-size: 2.8125rem;
+  font-size: 2.6470588235294117rem;
   line-height: 45px;
 }
 .icon-social {
   font-family: 'entypo-social';
   font-size: 45px;
-  font-size: 2.8125rem;
+  font-size: 2.6470588235294117rem;
   line-height: 45px;
 }
 a.icon {
@@ -1557,7 +1553,7 @@ main[role=main] {
   padding-top: 60px;
 }
 a {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #333;
   padding-botton: 2px;
   text-decoration: none;
   -webkit-transition: border 0.2s;
@@ -1565,6 +1561,7 @@ a {
   -ms-transition: border 0.2s;
   -o-transition: border 0.2s;
   transition: border 0.2s;
+  font-weight: bold;
 }
 a:hover {
   border-bottom-color: #fff !important;
@@ -1576,19 +1573,41 @@ hr {
   width: 100px;
 }
 .page {
-  margin: 0;
-  padding: 0 20px;
-  max-width: none;
+  width: auto;
+  max-width: 750px;
+  padding: 0 25px;
 }
 @media (min-width: 760px) {
   .page {
-    padding: 0 50px;
+    padding: 0;
   }
 }
 @media (min-width: 960px) {
-  .page {
-    padding: 0 0 0 100px;
-    max-width: 900px;
+  
+}
+.side-content {
+  text-align: right;
+  float: none !important;
+}
+@media (min-width: 760px) {
+  .side-content {
+    float: left !important;
+  }
+}
+@media (min-width: 1050px) {
+  .side-content {
+    margin-left: -150px;
+    width: 150px;
+  }
+}
+time:after {
+  content: "—";
+  margin: 0 10px;
+  display: none;
+}
+@media (min-width: 760px) {
+  time:after {
+    display: inline;
   }
 }
 .site-foot {
@@ -1614,10 +1633,6 @@ hr {
   float: left;
   padding: 8px 0;
 }
-.site-foot .page {
-  padding: 0 100px;
-  max-width: none;
-}
 .site-foot a:hover {
   color: #333;
 }
@@ -1633,21 +1648,13 @@ hr {
   padding-top: 22px;
   padding-bottom: 22px;
   border-bottom: 1px solid #eee;
-}
-.nav .page {
-  max-width: none;
-  padding-left: 15px;
-  padding-right: 15px;
+  background: #fcfcfc;
 }
 @media (min-width: 760px) {
-  .nav .page {
-    padding: 0 50px;
-  }
+  
 }
 @media (min-width: 960px) {
-  .nav .page {
-    padding: 0 100px;
-  }
+  
 }
 .nav a {
   border-bottom-color: transparent;
@@ -1656,7 +1663,7 @@ hr {
   font-weight: bold;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   display: inline-block;
-  color: #000 !important;
+  color: #333 !important;
   border-color: #fff !important;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -1666,7 +1673,7 @@ hr {
 }
 .nav a.active,
 .nav a:hover {
-  border-bottom-color: #000 !important;
+  border-bottom-color: #333 !important;
 }
 .twitter-follow-button {
   float: right;
@@ -1675,20 +1682,21 @@ hr {
 .nav a + a {
   margin-left: 30px;
 }
-.blog-post-list ul {
-  list-style: none;
-  margin: 0;
+.blog-list {
+  margin-bottom: 15px;
 }
-.blog-post-list time {
-  margin-right: 5px;
+.blog-list .img {
+  margin-right: 0;
   color: #999;
 }
-.blog-post-list a {
-  margin-left: 5px;
-  font-weight: bold;
+.blog-list p {
+  margin: 0;
 }
-.intro h1 + p {
-  margin-bottom: 64px;
+@media (min-width: 760px) {
+  .intro h1 + p {
+    font-size: 22px;
+    margin-bottom: 128px;
+  }
 }
 .intro .cats {
   vertical-align: top;
@@ -1710,15 +1718,16 @@ hr {
   margin-left: 20px;
   font-style: italic;
 }
-.base-listing h2 {
-  margin-bottom: 5px;
+.post-listing__item .img {
+  margin-right: 0;
+  color: #aaa;
 }
-.base-listing h2 + p {
-  color: #999;
+.post-listing__item {
+  margin-bottom: 96px;
 }
-.base-listing h2 a {
-  border-bottom-color: #fff;
+.post-listing--small h2 {
+  margin-bottom: 16px;
 }
-.base-listing h2 a:hover {
-  border-bottom-color: #000;
+.post-listing--small .post-listing__item {
+  margin-bottom: 64px;
 }

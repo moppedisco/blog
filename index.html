@@ -4,16 +4,23 @@ title: Home
 ---
 <article class="intro">
 	<h1 title="Hello." id="greeting">Hello.</h1>
-	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/cat.png" width="28" alt="cats"> alike.</p>		
+	<p>My name is <i>Yacine Belarbi</i> and i'm  <i>frontend developer</i> interested in design beyond the visuals. I craft products that are a joy to both <i>users</i>, <i>developers</i> and <img class="cats" title="cats" src="/images/nyancat.gif" width="50" alt="cats"> alike.</p>		
 </article>
-<div class="blog-post-list">
-	<h2>Latest articles</h2>
-	<ul>
-	{% for post in site.posts %}
-		<li><time>{{ post.date | date: "%B %d, %Y" }}</time> &raquo; <a class="delta" href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-	</ul>
-</div>
+
+<section>
+<h2>Latest post</h2>
+
+{% for post in site.posts limit: 1 %}
+	<div class="media blog-list">
+		<time class="img side-content">{{ post.date | date: "%b %Y" }}</time>
+		<div class="bd">
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<p>{{ post.description }}</p>
+		</div>
+	</div>
+{% endfor %}
+</section>
+
 <script>
 	//var greetings = Array("Hello.","Bonjour.","Grüezi.");
 	//var greeting = greetings[Math.floor(Math.random()*greetings.length)];	
@@ -37,6 +44,9 @@ title: Home
 		case "el":
 			greeting="Γειά.";
 			break;
+		case "es":
+			greeting="¡hola.";
+			break;			
 		default:
 			greeting="Hello.";
 	}

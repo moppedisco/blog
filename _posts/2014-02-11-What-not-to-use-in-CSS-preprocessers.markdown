@@ -3,13 +3,10 @@ layout: post
 title:  "CSS preprocessers - the bad parts"
 date:   2014-02-11 12:53:24
 categories: CSS preprocessers
+description: With great power, comes great responsiblity.
 ---
 
-With great power, comes great responsiblity.
-
-###The Hard Way
-
-The problem with saying “no” is that it often shuts down a conversation. This can leave a client or boss feeling defensive, that their ideas don’t matter, or, worse yet, that they’ve hired someone who can’t listen or be respectful. Nobody wants to lose a client or be fired, so we often won’t say “no” for this very reason.
+The problem with saying “no” is that it often shuts down a conversation. This can leave a client or boss feeling defensive, that their ideas don’t matter, or, worse yet, that they’ve hired someone who can’t listen or be respectful. 
 
 Simply disagreeing or refusing also doesn't provide any extra value to the conversation. As a consultant or employee, it's often our job to provide solutions and offer an outside perspective; a flat “no” doesn’t give us an opportunity to do either.
 

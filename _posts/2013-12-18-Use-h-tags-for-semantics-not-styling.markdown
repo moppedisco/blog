@@ -3,13 +3,10 @@ layout: post
 title:  "Use H-tags for semantics, not styling"
 date:   2014-02-11 12:53:24
 categories: HTML
+description: Styling H-tags is tricky, master the tricks.
 ---
 
-Styling H-tags is tricky, master the tricks.
-
-###The Hard Way
-
-The problem with saying “no” is that it often shuts down a conversation. This can leave a client or boss feeling defensive, that their ideas don’t matter, or, worse yet, that they’ve hired someone who can’t listen or be respectful. Nobody wants to lose a client or be fired, so we often won’t say “no” for this very reason.
+In a perfect world, we would be able to say “yes” to every single client demand, every project would complete under budget in half the time and we could all ride unicorns to work in the morning. But the world is far from perfect and blindly saying “yes” can land us in some serious trouble.
 
 Simply disagreeing or refusing also doesn't provide any extra value to the conversation. As a consultant or employee, it's often our job to provide solutions and offer an outside perspective; a flat “no” doesn’t give us an opportunity to do either.
 

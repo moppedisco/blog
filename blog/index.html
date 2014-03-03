@@ -3,12 +3,15 @@ layout: default
 title: Blog
 ---
 
-<section class="base-listing">
+<section class="post-listing">
 	<h1>Blog.</h1>
 	{% for post in site.posts %}
-		<article>
-			<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			{{ post.excerpt }}
+		<article class="media post-listing__item">
+			<time class="img side-content">{{ post.date | date: "%b %d, %Y" }}</time>
+			<div class="bd">
+				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+				{{ post.description }}
+			</div>
 		</article>	
 	{% endfor %}
 </section>

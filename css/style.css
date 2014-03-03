@@ -1585,6 +1585,11 @@ hr {
 @media (min-width: 960px) {
   
 }
+.img-resp {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 .side-content {
   text-align: right;
   float: none !important;
@@ -1616,6 +1621,7 @@ time:after {
   margin-top: 120px;
   color: #ccc;
   text-align: right;
+  overflow: hidden;
 }
 .site-foot a {
   color: #ccc !important;
@@ -1625,13 +1631,25 @@ time:after {
   -ms-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s;
+  float: left;
+}
+@media (min-width: 760px) {
+  .site-foot a {
+    float: none;
+  }
 }
 .site-foot a:hover {
   color: #999 !important;
 }
 .site-foot span {
-  float: left;
+  text-align: left;
   padding: 8px 0;
+  display: block;
+}
+@media (min-width: 760px) {
+  .site-foot span {
+    float: left;
+  }
 }
 .site-foot a:hover {
   color: #333;

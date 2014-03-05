@@ -1728,7 +1728,6 @@ time:after {
 }
 .post .meta {
   color: #999;
-  margin: -20px 0 -12px;
 }
 .post h1 a {
   font-size: 18px;
@@ -1740,11 +1739,11 @@ time:after {
   margin-right: 0;
   color: #aaa;
 }
+.post-listing__item h2 {
+  margin-bottom: 8px;
+}
 .post-listing__item {
   margin-bottom: 96px;
-}
-.post-listing--small h2 {
-  margin-bottom: 16px;
 }
 .post-listing--small .post-listing__item {
   margin-bottom: 64px;

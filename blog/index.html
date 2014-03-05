@@ -10,7 +10,7 @@ title: Blog
 			<time class="img side-content">{{ post.date | date: "%b %d, %Y" }}</time>
 			<div class="bd">
 				<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-				{{ post.description }}
+				{{ post.excerpt }}
 			</div>
 		</article>	
 	{% endfor %}

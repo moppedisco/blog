@@ -78,22 +78,66 @@ a:hover {
 hr {
 	border: 0;
 	border-top: 1px solid #ddd;
-	width: 100px;
 }
 
 .page {
-	width: auto;
-	max-width: 750px;
 	padding: 0 25px;
 	
 	@media (min-width: 760px) {
+		width: 90%;
 		padding: 0;
 	}
 
-	@media (min-width: 960px) {
+	@media (min-width: 1280px) {
+		width: 50%;
+		max-width: 760px;
+	}
+
+}
+
+.fullWidth {
+	margin-bottom: @base-spacing-unit*1px;	
+
+	@media (min-width: 760px) {
+		margin-left: -5%;
+		margin-right: -5%;
+	}
+
+	@media (min-width: 1280px) {
+		margin-left: -50%;
+		margin-right: -50%;
+	}	
+}
+
+.fullWidth .unit {
+
+}
+
+.fullWidth .unit:first-child {
+	padding-left: 0;
+
+	@media (min-width: 760px) {
+		padding-right: 0px;
 
 	}
 
+	@media (min-width: 1280px) {
+		padding-left: 30px;
+		padding-right: 30px;
+	}		
+}
+
+.fullWidth .unit:last-child {
+	padding-left: 30px;
+
+	@media (min-width: 760px) {
+		padding-right: 0px;
+	}
+
+	@media (min-width: 1280px) {
+		padding-left: 0px;
+		padding-right: 30px;
+	}			
 }
 
 .img-resp {
@@ -181,9 +225,9 @@ time:after {
 }
 
 .logo img {
-	width: 50px;
-	height: 50px;
-	border-radius: 100px;
+	// width: 50px;
+	// height: 50px;
+	// border-radius: 100px;
 }
 
 .nav {

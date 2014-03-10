@@ -84,7 +84,7 @@ hr {
 	padding: 0 25px;
 	
 	@media (min-width: 760px) {
-		width: 90%;
+		width: 60%;
 		padding: 0;
 	}
 
@@ -99,13 +99,11 @@ hr {
 	margin-bottom: @base-spacing-unit*1px;	
 
 	@media (min-width: 760px) {
-		margin-left: -5%;
-		margin-right: -5%;
+
 	}
 
 	@media (min-width: 1280px) {
-		margin-left: -50%;
-		margin-right: -50%;
+
 	}	
 }
 
@@ -114,29 +112,26 @@ hr {
 }
 
 .fullWidth .unit:first-child {
-	padding-left: 0;
 
 	@media (min-width: 760px) {
-		padding-right: 0px;
-
+		position: absolute;
+		left: 0;
+		padding: 0 20px;
+		width: 20%;
 	}
 
 	@media (min-width: 1280px) {
-		padding-left: 30px;
-		padding-right: 30px;
 	}		
 }
 
 .fullWidth .unit:last-child {
-	padding-left: 30px;
 
 	@media (min-width: 760px) {
-		padding-right: 0px;
+		width: 100%;
+		padding: 0;
 	}
 
 	@media (min-width: 1280px) {
-		padding-left: 0px;
-		padding-right: 30px;
 	}			
 }
 

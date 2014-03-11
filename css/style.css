@@ -1577,11 +1577,12 @@ hr {
 @media (min-width: 760px) {
   .page {
     max-width: 760px;
-    padding: 0;
   }
 }
 @media (min-width: 1280px) {
-  
+  .page {
+    padding: 0;
+  }
 }
 .fullWidth {
   margin-bottom: 128px;
@@ -1694,7 +1695,7 @@ time:after {
   font-size: 13px;
   font-weight: bold;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  display: inline-block;
+  float: left;
   color: #333 !important;
   border-color: #fff !important;
   -webkit-transition: all 0.2s;
@@ -1702,6 +1703,10 @@ time:after {
   -ms-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
+  margin-top: 9px;
+}
+.nav .logo {
+  margin-top: 0;
 }
 .nav a.active,
 .nav a:hover {
@@ -1709,7 +1714,7 @@ time:after {
 }
 .twitter-follow-button {
   float: right;
-  margin: 6px 0 0;
+  margin-top: 6px;
 }
 .nav a + a {
   margin-left: 30px;

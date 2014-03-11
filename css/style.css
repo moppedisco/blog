@@ -1576,44 +1576,33 @@ hr {
 }
 @media (min-width: 760px) {
   .page {
-    width: 60%;
+    max-width: 760px;
     padding: 0;
   }
 }
 @media (min-width: 1280px) {
-  .page {
-    width: 50%;
-    max-width: 760px;
-  }
+  
 }
 .fullWidth {
-  margin-bottom: 32px;
+  margin-bottom: 128px;
+  position: relative;
 }
-@media (min-width: 760px) {
-  
+.fullWidth__outside {
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
 }
-@media (min-width: 1280px) {
-  
-}
-@media (min-width: 760px) {
-  .fullWidth .unit:first-child {
-    position: absolute;
-    left: 0;
-    padding: 0 20px;
-    width: 20%;
+@media (min-width: 1240px) {
+  .fullWidth__outside {
+    text-align: left;
+    float: left;
+    margin-left: -240px;
+    width: 220px;
   }
 }
-@media (min-width: 1280px) {
-  
-}
-@media (min-width: 760px) {
-  .fullWidth .unit:last-child {
-    width: 100%;
-    padding: 0;
-  }
-}
-@media (min-width: 1280px) {
-  
+.fullWidth__inner {
+  display: table-cell;
 }
 .img-resp {
   width: 100%;
@@ -1720,7 +1709,7 @@ time:after {
 }
 .twitter-follow-button {
   float: right;
-  margin: 8px 0 0;
+  margin: 6px 0 0;
 }
 .nav a + a {
   margin-left: 30px;

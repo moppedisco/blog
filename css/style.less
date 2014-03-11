@@ -84,55 +84,41 @@ hr {
 	padding: 0 25px;
 	
 	@media (min-width: 760px) {
-		width: 60%;
+		max-width: 760px;
 		padding: 0;
 	}
 
 	@media (min-width: 1280px) {
-		width: 50%;
-		max-width: 760px;
+
 	}
 
 }
 
 .fullWidth {
-	margin-bottom: @base-spacing-unit*1px;	
-
-	@media (min-width: 760px) {
-
-	}
-
-	@media (min-width: 1280px) {
-
-	}	
+	margin-bottom: @base-spacing-unit*4px;	
+	position: relative;
+	
 }
 
-.fullWidth .unit {
+.fullWidth__outside {
+	text-align: center;
+	font-style: italic; 
 
-}
+	border-top: 1px solid #ddd;
+	padding-top: 15px;
 
-.fullWidth .unit:first-child {
+	@media (min-width: 1240px) {
+		text-align: left;
+		float: left;
+		margin-left: -240px;
+		width: 220px;
 
-	@media (min-width: 760px) {
-		position: absolute;
-		left: 0;
-		padding: 0 20px;
-		width: 20%;
-	}
 
-	@media (min-width: 1280px) {
 	}		
 }
 
-.fullWidth .unit:last-child {
-
-	@media (min-width: 760px) {
-		width: 100%;
-		padding: 0;
-	}
-
-	@media (min-width: 1280px) {
-	}			
+.fullWidth__inner {
+	display: table-cell;
 }
 
 .img-resp {
@@ -265,7 +251,7 @@ time:after {
 
 .twitter-follow-button {
 	float: right;
-	margin: 8px 0 0;
+	margin: 6px 0 0;
 }
 
 .nav a + a {

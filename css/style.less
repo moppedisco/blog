@@ -85,18 +85,31 @@ hr {
 	
 	@media (min-width: 760px) {
 		max-width: 760px;
+		padding: 0;
 	}
 
 	@media (min-width: 1280px) {
-		padding: 0;
+		
 	}
 
 }
 
 .fullWidth {
-	margin-bottom: @base-spacing-unit*4px;	
+
+	margin-bottom: @base-spacing-unit*3px;	
 	position: relative;
+	@media (min-width: 1000px) {
+		margin-right: -110px;
+	}
 	
+}
+
+.fullWidth h3 {
+	font-style: normal;
+	text-transform: uppercase;
+	font-family: helvetica, Arial;
+	font-size: 83%;
+	letter-spacing: 1px;
 }
 
 .fullWidth__outside {
@@ -106,15 +119,18 @@ hr {
 	border-top: 1px solid #ddd;
 	padding-top: 15px;
 
-	@media (min-width: 1240px) {
-		text-align: left;
+	@media (min-width: 1000px) {
+		text-align: right;
 		float: left;
-		margin-left: -240px;
+		margin-left: -110px;
+		margin-right: 30px;
 		width: 220px;
 
 
 	}		
 }
+
+.fullWidth__outside p { font-size: 80%; }
 
 .fullWidth__inner {
 	display: table-cell;

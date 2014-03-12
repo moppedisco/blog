@@ -1577,16 +1577,27 @@ hr {
 @media (min-width: 760px) {
   .page {
     max-width: 760px;
-  }
-}
-@media (min-width: 1280px) {
-  .page {
     padding: 0;
   }
 }
+@media (min-width: 1280px) {
+  
+}
 .fullWidth {
-  margin-bottom: 128px;
+  margin-bottom: 96px;
   position: relative;
+}
+@media (min-width: 1000px) {
+  .fullWidth {
+    margin-right: -110px;
+  }
+}
+.fullWidth h3 {
+  font-style: normal;
+  text-transform: uppercase;
+  font-family: helvetica, Arial;
+  font-size: 83%;
+  letter-spacing: 1px;
 }
 .fullWidth__outside {
   text-align: center;
@@ -1594,13 +1605,17 @@ hr {
   border-top: 1px solid #ddd;
   padding-top: 15px;
 }
-@media (min-width: 1240px) {
+@media (min-width: 1000px) {
   .fullWidth__outside {
-    text-align: left;
+    text-align: right;
     float: left;
-    margin-left: -240px;
+    margin-left: -110px;
+    margin-right: 30px;
     width: 220px;
   }
+}
+.fullWidth__outside p {
+  font-size: 80%;
 }
 .fullWidth__inner {
   display: table-cell;

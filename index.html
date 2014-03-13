@@ -49,4 +49,10 @@ name: home
 	}
 
 	element.innerHTML = greeting;
+
+    if (window.localStorage.getItem('wasVisited')) {
+    	document.querySelector('body').className += ' visited';
+    } else {
+    	window.localStorage.setItem('wasVisited', 1);
+    }
 </script>

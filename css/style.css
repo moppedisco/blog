@@ -1587,11 +1587,12 @@ time {
 @media (min-width: 760px) {
   .page {
     max-width: 760px;
-    padding: 0;
   }
 }
-@media (min-width: 1280px) {
-  
+@media (min-width: 761px) {
+  .page {
+    padding: 0;
+  }
 }
 .icon {
   font-family: 'entypo';
@@ -1675,11 +1676,13 @@ a.icon {
   color: #333;
 }
 .twitter-follow-button {
-  margin-top: 6px;
+  display: block;
+  margin: 6px auto 0;
 }
 @media (min-width: 760px) {
   .twitter-follow-button {
     float: right;
+    display: inline;
   }
 }
 .touch .twitter-follow-button {
@@ -1830,6 +1833,9 @@ a.icon {
   text-align: right;
   overflow: hidden;
 }
+.site-foot {
+  text-align: center;
+}
 .site-foot a {
   color: #ccc;
   -webkit-transition: color 0.2s;
@@ -1837,11 +1843,10 @@ a.icon {
   -ms-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s;
-  float: left;
 }
 @media (min-width: 760px) {
   .site-foot a {
-    float: none;
+    float: right;
   }
 }
 .site-foot a:hover {
@@ -1851,6 +1856,7 @@ a.icon {
   text-align: left;
   padding: 8px 0;
   display: block;
+  text-align: center;
 }
 @media (min-width: 760px) {
   .site-foot span {

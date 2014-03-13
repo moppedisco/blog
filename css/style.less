@@ -106,11 +106,10 @@ main[role=main]{
 	
 	@media (min-width: 760px) {
 		max-width: 760px;
-		padding: 0;
 	}
 
-	@media (min-width: 1280px) {
-		
+	@media (min-width: 761px) {
+		padding: 0;
 	}
 
 }
@@ -200,10 +199,12 @@ a.icon {
 }
 
 .twitter-follow-button {
+	display: block;
+	margin: 6px auto 0;
 	
-	margin-top: 6px;
 	@media (min-width: 760px) {
 		float: right;
+		display: inline;
 	}			
 }
 
@@ -385,6 +386,10 @@ a.icon {
 	overflow: hidden;
 }
 
+.site-foot {
+	text-align: center;
+}
+
 .site-foot a {  
 	color: #ccc;
 	-webkit-transition: color 0.2s;
@@ -392,10 +397,9 @@ a.icon {
 	-ms-transition: color 0.2s;
 	-o-transition: color 0.2s;
 	transition: color 0.2s;
-	float: left;
 
 	@media (min-width: 760px) {
-		float: none; 
+		float: right;
 	}	
 
 }
@@ -408,6 +412,8 @@ a.icon {
 	text-align: left;
 	padding: 8px 0; 
 	display: block;
+	text-align: center;
+
 	@media (min-width: 760px) {
 		float: left; 
 	}	

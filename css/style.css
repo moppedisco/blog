@@ -1670,6 +1670,48 @@ a.icon {
   vertical-align: top;
   margin: 0 5px;
 }
+.home .nav {
+  opacity: 0;
+  -webkit-animation-name: firstpage;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: firstpage;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.home .site-foot {
+  opacity: 0;
+  -webkit-animation-name: firstpage;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-name: firstpage;
+  animation-duration: 5s;
+  animation-delay: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes firstpage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes firstpage {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* ======================================================================================== */
 /* ======================================================================================== */
 /* ======================================================================================== */

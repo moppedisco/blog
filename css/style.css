@@ -1550,21 +1550,34 @@ a.icon {
 }
 main[role=main] {
   min-height: 420px;
-  padding-top: 60px;
+  padding-top: 96px;
 }
 a {
-  border-bottom: 2px solid #333;
-  padding-botton: 2px;
-  text-decoration: none;
-  -webkit-transition: border 0.2s;
-  -moz-transition: border 0.2s;
-  -ms-transition: border 0.2s;
-  -o-transition: border 0.2s;
-  transition: border 0.2s;
   font-weight: bold;
+  position: relative;
+}
+a:after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background: yellow;
+  display: block;
+  position: absolute;
+  opacity: 0.3;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 a:hover {
-  border-bottom-color: #fff !important;
   text-decoration: none;
 }
 hr {
@@ -1627,29 +1640,7 @@ hr {
   height: auto;
 }
 .side-content {
-  text-align: right;
   float: none !important;
-}
-@media (min-width: 760px) {
-  .side-content {
-    float: left !important;
-  }
-}
-@media (min-width: 1050px) {
-  .side-content {
-    margin-left: -150px;
-    width: 150px;
-  }
-}
-time:after {
-  content: "—";
-  margin: 0 10px;
-  display: none;
-}
-@media (min-width: 760px) {
-  time:after {
-    display: inline;
-  }
 }
 .site-foot {
   padding-top: 32px !important;
@@ -1696,8 +1687,6 @@ time:after {
 .nav {
   padding-top: 22px;
   padding-bottom: 22px;
-  border-bottom: 1px solid #eee;
-  background: #fcfcfc;
 }
 @media (min-width: 760px) {
   
@@ -1712,8 +1701,8 @@ time:after {
   font-weight: bold;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   float: left;
-  color: #333 !important;
-  border-color: #fff !important;
+  color: #999;
+  border-color: #fff;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -1726,7 +1715,7 @@ time:after {
 }
 .nav a.active,
 .nav a:hover {
-  border-bottom-color: #333 !important;
+  color: #333;
 }
 .twitter-follow-button {
   float: right;
@@ -1745,6 +1734,9 @@ time:after {
 .blog-list p {
   margin: 0;
 }
+.intro {
+  text-align: center;
+}
 @media (min-width: 760px) {
   .intro h1 + p {
     font-size: 22px;
@@ -1761,7 +1753,7 @@ time:after {
 .post h2 {
   font-weight: bold;
 }
-.post .meta {
+time {
   color: #999;
 }
 .post h1 a {
@@ -1770,16 +1762,6 @@ time:after {
   margin-left: 20px;
   font-style: italic;
 }
-.post-listing__item .img {
-  margin-right: 0;
-  color: #aaa;
-}
-.post-listing__item h2 {
-  margin-bottom: 8px;
-}
-.post-listing__item {
-  margin-bottom: 96px;
-}
-.post-listing--small .post-listing__item {
-  margin-bottom: 64px;
+.post-listing h2 {
+  margin: 0;
 }

@@ -5,6 +5,10 @@
 @import "_vars";
 @import "EF-CSS-FRAMEWORK/init";
 
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* DEFAULTS */
 
 *, 
 *:before, 
@@ -12,9 +16,56 @@
 	-webkit-font-smoothing: antialiased;
 }
 
-h1 { margin-bottom: @half-spacing-unit*1px; }
-h2 { }
-h3 { margin: 0; }
+h1 { 
+	margin-bottom: @half-spacing-unit*1px; 
+}
+
+h3 { 
+	margin: 0; 
+}
+
+a { 
+	font-weight: bold;
+	position: relative;
+}
+
+a:after { 
+	content: "";
+	width: 0;
+	height: 100%;
+	background: yellow;
+	display: block;
+	position: absolute;
+	opacity: 0.3;
+	top: 0;
+	left: 50%;
+	z-index: -1;
+
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+a:hover:after {
+	width: 100%;
+	left: 0;
+} 
+
+a:hover { 
+	text-decoration: none;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+time {
+	color: #999;
+}
+
 @font-face {
 	font-family: 'entypo';
 	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
@@ -37,6 +88,29 @@ h3 { margin: 0; }
 	font-style: normal;
 }
 
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* GENERAL */
+
+main[role=main]{
+	min-height: 420px;
+	padding-top: @base-spacing-unit*3px;
+}
+
+.page {
+	padding: 0 25px;
+	
+	@media (min-width: 760px) {
+		max-width: 760px;
+		padding: 0;
+	}
+
+	@media (min-width: 1280px) {
+		
+	}
+
+}
 
 .icon {
 	font-family: 'entypo';
@@ -53,61 +127,106 @@ a.icon {
 	padding: 0;
 }
 
-main[role=main]{
-	min-height: 420px;
-	padding-top: @base-spacing-unit*3px;
-}
-
-a { 
-	font-weight: bold;
-	position: relative;
-}
-
-a:after { 
-content: "";
-width: 0;
-height: 100%;
-background: yellow;
-display: block;
-position: absolute;
-opacity: 0.3;
-top: 0;
-left: 50%;
-z-index: -1;
--webkit-transition: all 0.3s;
--moz-transition: all 0.3s;
--ms-transition: all 0.3s;
--o-transition: all 0.3s;
-transition: all 0.3s;
-}
-
-a:hover:after {
+.img-resp {
 	width: 100%;
-	left: 0;
-} 
-
-a:hover { 
-	text-decoration: none;
+	max-width: 100%;
+	height: auto;
 }
 
-hr {
-	border: 0;
-	border-top: 1px solid #ddd;
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* NAVIGATION */
+
+.logo {
+	border: none;
 }
 
-.page {
-	padding: 0 25px;
-	
+.nav {
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+.nav a {
+	border-bottom-color: transparent;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: @headings-font-family-secondary;
+	float: left;
+	color: #999;
+	border-color: #fff;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	margin-top: 9px;
+}
+
+.nav .logo { 
+	margin-top: 0; 
+}
+
+.nav a.active,
+.nav a:hover { 
+	color: #333; 
+}
+
+.twitter-follow-button {
+	float: right;
+	margin-top: 6px;
+}
+
+.nav a + a {
+	margin-left: 30px;
+}
+
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* FIRST PAGE */
+
+.intro { text-align: center; }
+.intro h1 + p {
 	@media (min-width: 760px) {
-		max-width: 760px;
-		padding: 0;
-	}
-
-	@media (min-width: 1280px) {
-		
+		font-size: 22px;	
+		margin-bottom: 	@base-spacing-unit*4px;
 	}
 
 }
+
+.intro .cats {
+	vertical-align: top;
+	margin: 0 5px;
+}
+
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* POST */
+
+.post h1 {
+	margin: 0;
+}
+
+.post h2 {
+	font-weight: bold;
+}
+
+.post h1 a {
+	font-size: 18px;
+	margin-top: -10px;
+	margin-left: 20px;
+	font-style: italic;
+}
+
+.post-listing h2 { 
+	margin: 0; 
+}
+
+/* ============================================ */
+/* POST EXTRA */
 
 .fullWidth {
 
@@ -145,44 +264,19 @@ hr {
 	}		
 }
 
-.fullWidth__outside p { font-size: 80%; color: #777; }
+.fullWidth__outside p { 
+	font-size: 80%;
+	color: #777; 
+}
 
 .fullWidth__inner {
 	display: table-cell;
 }
 
-.img-resp {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-}
-
-.side-content {
-	float: none !important;
-	// text-align: right;
-	// float: none !important;
-
-	// @media (min-width: 760px) {
-	// 	float: left !important;
-	// }
-
-	// @media (min-width: 1050px) {
-	// 	margin-left: -150px;
-	// 	width: 150px;
-	// }
-
-}
-
-time:after {
-	// content: "—";
-	// margin: 0 10px;
-	// display: none;
-	
-	// @media (min-width: 760px) {
-	// 	display: inline;
-	// }
-}
-
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* SITE FOOTER */
 
 .site-foot {
 	.soft--top;
@@ -194,8 +288,7 @@ time:after {
 }
 
 .site-foot a {  
-	color: #ccc !important;
-	border-color: #fff !important;
+	color: #ccc;
 	-webkit-transition: color 0.2s;
 	-moz-transition: color 0.2s;
 	-ms-transition: color 0.2s;
@@ -210,7 +303,7 @@ time:after {
 }
 
 .site-foot a:hover {  
-	color: #999 !important;
+	color: #999;
 }
 
 .site-foot span { 
@@ -223,116 +316,11 @@ time:after {
 
 }
 
-.site-foot .page {  
-}
-
-
-
 .site-foot a:hover {  
 	color: #333;
 }
 
-.logo {
-	border: none;
-}
 
-.logo img {
-	// width: 50px;
-	// height: 50px;
-	// border-radius: 100px;
-}
 
-.nav {
-	padding-top: 22px;
-	padding-bottom: 22px;
-	// border-bottom: 1px solid #eee;
-	// background: #fcfcfc;
-}
 
-.nav .page {
-	
-	@media (min-width: 760px) {
-	}	
-
-	@media (min-width: 960px) {
-	}
-
-}
-
-.nav a {
-	border-bottom-color: transparent;
-	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: bold;
-	font-family: @headings-font-family-secondary;
-	float: left;
-	color: #999;
-	border-color: #fff;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	transition: all 0.2s;
-	margin-top: 9px;
-}
-
-.nav .logo { margin-top: 0; }
-
-.nav a.active,
-.nav a:hover {
-	color: #333;
-}
-
-.twitter-follow-button {
-	float: right;
-	margin-top: 6px;
-}
-
-.nav a + a {
-	margin-left: 30px;
-}
-
-.blog-list { margin-bottom: 15px; }
-
-.blog-list .img {
-	margin-right: 0;
-	color: #999;
-}
-
-.blog-list p { margin: 0; }
-
-.intro { text-align: center; }
-.intro h1 + p {
-	@media (min-width: 760px) {
-		font-size: 22px;	
-		margin-bottom: 	@base-spacing-unit*4px;
-	}
-
-}
-
-.intro .cats {
-	vertical-align: top;
-	margin: 0 5px;
-}
-
-.post h1 {
-	margin: 0;
-}
-
-.post h2 {
-	font-weight: bold;
-}
-
-time {
-	color: #999;
-}
-
-.post h1 a {
-	font-size: 18px;
-	margin-top: -10px;
-	margin-left: 20px;
-	font-style: italic;
-}
-
-.post-listing h2 { margin: 0; }
 

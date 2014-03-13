@@ -1507,6 +1507,10 @@ Created:    2012-04-11
   width: 300px;
   _margin-left: -3px;
 }
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* DEFAULTS */
 *,
 *:before,
 *:after {
@@ -1517,40 +1521,6 @@ h1 {
 }
 h3 {
   margin: 0;
-}
-@font-face {
-  font-family: 'entypo';
-  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
-  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot?#iefix') format('embedded-opentype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.woff') format('woff'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.ttf') format('truetype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.svg#entypo') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'entypo-social';
-  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot');
-  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot?#iefix') format('embedded-opentype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.woff') format('woff'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.ttf') format('truetype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.svg#entypo-social') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-.icon {
-  font-family: 'entypo';
-  font-size: 45px;
-  font-size: 2.6470588235294117rem;
-  line-height: 45px;
-}
-.icon-social {
-  font-family: 'entypo-social';
-  font-size: 45px;
-  font-size: 2.6470588235294117rem;
-  line-height: 45px;
-}
-a.icon {
-  border: none;
-  padding: 0;
-}
-main[role=main] {
-  min-height: 420px;
-  padding-top: 96px;
 }
 a {
   font-weight: bold;
@@ -1584,6 +1554,31 @@ hr {
   border: 0;
   border-top: 1px solid #ddd;
 }
+time {
+  color: #999;
+}
+@font-face {
+  font-family: 'entypo';
+  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
+  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot?#iefix') format('embedded-opentype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.woff') format('woff'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.ttf') format('truetype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.svg#entypo') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'entypo-social';
+  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot');
+  src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot?#iefix') format('embedded-opentype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.woff') format('woff'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.ttf') format('truetype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.svg#entypo-social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* GENERAL */
+main[role=main] {
+  min-height: 420px;
+  padding-top: 96px;
+}
 .page {
   padding: 0 25px;
 }
@@ -1596,6 +1591,106 @@ hr {
 @media (min-width: 1280px) {
   
 }
+.icon {
+  font-family: 'entypo';
+  font-size: 45px;
+  font-size: 2.6470588235294117rem;
+  line-height: 45px;
+}
+.icon-social {
+  font-family: 'entypo-social';
+  font-size: 45px;
+  font-size: 2.6470588235294117rem;
+  line-height: 45px;
+}
+a.icon {
+  border: none;
+  padding: 0;
+}
+.img-resp {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* NAVIGATION */
+.logo {
+  border: none;
+}
+.nav {
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.nav a {
+  border-bottom-color: transparent;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  float: left;
+  color: #999;
+  border-color: #fff;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  margin-top: 9px;
+}
+.nav .logo {
+  margin-top: 0;
+}
+.nav a.active,
+.nav a:hover {
+  color: #333;
+}
+.twitter-follow-button {
+  float: right;
+  margin-top: 6px;
+}
+.nav a + a {
+  margin-left: 30px;
+}
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* FIRST PAGE */
+.intro {
+  text-align: center;
+}
+@media (min-width: 760px) {
+  .intro h1 + p {
+    font-size: 22px;
+    margin-bottom: 128px;
+  }
+}
+.intro .cats {
+  vertical-align: top;
+  margin: 0 5px;
+}
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* POST */
+.post h1 {
+  margin: 0;
+}
+.post h2 {
+  font-weight: bold;
+}
+.post h1 a {
+  font-size: 18px;
+  margin-top: -10px;
+  margin-left: 20px;
+  font-style: italic;
+}
+.post-listing h2 {
+  margin: 0;
+}
+/* ============================================ */
+/* POST EXTRA */
 .fullWidth {
   margin-bottom: 96px;
   position: relative;
@@ -1634,14 +1729,10 @@ hr {
 .fullWidth__inner {
   display: table-cell;
 }
-.img-resp {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-.side-content {
-  float: none !important;
-}
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* ======================================================================================== */
+/* SITE FOOTER */
 .site-foot {
   padding-top: 32px !important;
   padding-bottom: 32px !important;
@@ -1651,8 +1742,7 @@ hr {
   overflow: hidden;
 }
 .site-foot a {
-  color: #ccc !important;
-  border-color: #fff !important;
+  color: #ccc;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
@@ -1666,7 +1756,7 @@ hr {
   }
 }
 .site-foot a:hover {
-  color: #999 !important;
+  color: #999;
 }
 .site-foot span {
   text-align: left;
@@ -1680,88 +1770,4 @@ hr {
 }
 .site-foot a:hover {
   color: #333;
-}
-.logo {
-  border: none;
-}
-.nav {
-  padding-top: 22px;
-  padding-bottom: 22px;
-}
-@media (min-width: 760px) {
-  
-}
-@media (min-width: 960px) {
-  
-}
-.nav a {
-  border-bottom-color: transparent;
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bold;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  float: left;
-  color: #999;
-  border-color: #fff;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  margin-top: 9px;
-}
-.nav .logo {
-  margin-top: 0;
-}
-.nav a.active,
-.nav a:hover {
-  color: #333;
-}
-.twitter-follow-button {
-  float: right;
-  margin-top: 6px;
-}
-.nav a + a {
-  margin-left: 30px;
-}
-.blog-list {
-  margin-bottom: 15px;
-}
-.blog-list .img {
-  margin-right: 0;
-  color: #999;
-}
-.blog-list p {
-  margin: 0;
-}
-.intro {
-  text-align: center;
-}
-@media (min-width: 760px) {
-  .intro h1 + p {
-    font-size: 22px;
-    margin-bottom: 128px;
-  }
-}
-.intro .cats {
-  vertical-align: top;
-  margin: 0 5px;
-}
-.post h1 {
-  margin: 0;
-}
-.post h2 {
-  font-weight: bold;
-}
-time {
-  color: #999;
-}
-.post h1 a {
-  font-size: 18px;
-  margin-top: -10px;
-  margin-left: 20px;
-  font-style: italic;
-}
-.post-listing h2 {
-  margin: 0;
 }

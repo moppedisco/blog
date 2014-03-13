@@ -1526,7 +1526,7 @@ a {
   font-weight: bold;
   position: relative;
 }
-a:after {
+.no-touch a:after {
   content: "";
   width: 0;
   height: 100%;
@@ -1575,9 +1575,11 @@ time {
 /* ======================================================================================== */
 /* ======================================================================================== */
 /* GENERAL */
-main[role=main] {
-  min-height: 420px;
-  padding-top: 96px;
+@media (min-width: 760px) {
+  main[role=main] {
+    padding-top: 96px;
+    min-height: 420px;
+  }
 }
 .page {
   padding: 0 25px;
@@ -1622,6 +1624,12 @@ a.icon {
 .nav {
   padding-top: 22px;
   padding-bottom: 22px;
+  text-align: center;
+}
+@media (min-width: 760px) {
+  .nav {
+    text-align: left;
+  }
 }
 .nav a {
   border-bottom-color: transparent;
@@ -1629,7 +1637,7 @@ a.icon {
   font-size: 13px;
   font-weight: bold;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  float: left;
+  display: inline-block;
   color: #999;
   border-color: #fff;
   -webkit-transition: all 0.2s;
@@ -1638,20 +1646,49 @@ a.icon {
   -o-transition: all 0.2s;
   transition: all 0.2s;
   margin-top: 9px;
+  margin-left: 9px;
+  margin-right: 9px;
+}
+@media (min-width: 760px) {
+  .nav a {
+    float: left;
+    display: inline;
+    margin: 9px 0 0;
+  }
 }
 .nav .logo {
-  margin-top: 0;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 760px) {
+  .nav .logo {
+    width: auto;
+    text-align: left;
+  }
+}
+.nav .logo:after {
+  display: none;
 }
 .nav a.active,
 .nav a:hover {
   color: #333;
 }
 .twitter-follow-button {
-  float: right;
   margin-top: 6px;
 }
-.nav a + a {
-  margin-left: 30px;
+@media (min-width: 760px) {
+  .twitter-follow-button {
+    float: right;
+  }
+}
+.touch .twitter-follow-button {
+  display: none;
+}
+@media (min-width: 760px) {
+  .nav a + a {
+    margin-left: 30px;
+  }
 }
 /* ======================================================================================== */
 /* ======================================================================================== */

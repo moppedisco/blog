@@ -29,7 +29,7 @@ a {
 	position: relative;
 }
 
-a:after { 
+.no-touch a:after { 
 	content: "";
 	width: 0;
 	height: 100%;
@@ -94,8 +94,11 @@ time {
 /* GENERAL */
 
 main[role=main]{
-	min-height: 420px;
-	padding-top: @base-spacing-unit*3px;
+	
+	@media (min-width: 760px) {
+		padding-top: @base-spacing-unit*3px;
+		min-height: 420px;
+	}	
 }
 
 .page {
@@ -145,6 +148,10 @@ a.icon {
 .nav {
 	padding-top: 22px;
 	padding-bottom: 22px;
+	text-align: center;
+	@media (min-width: 760px) {
+		text-align: left;
+	}			
 }
 
 .nav a {
@@ -153,7 +160,8 @@ a.icon {
 	font-size: 13px;
 	font-weight: bold;
 	font-family: @headings-font-family-secondary;
-	float: left;
+	display: inline-block;
+
 	color: #999;
 	border-color: #fff;
 	-webkit-transition: all 0.2s;
@@ -162,10 +170,28 @@ a.icon {
 	-o-transition: all 0.2s;
 	transition: all 0.2s;
 	margin-top: 9px;
+	margin-left: 9px;
+	margin-right: 9px;
+
+	@media (min-width: 760px) {
+		float: left;
+		display: inline;
+		margin: 9px 0 0;
+	}		
 }
 
 .nav .logo { 
-	margin-top: 0; 
+	margin: 0; 
+	width: 100%;
+	text-align: center;
+	@media (min-width: 760px) {
+		width: auto;
+		text-align: left;
+	}	
+}
+
+.nav .logo:after {
+	display: none;
 }
 
 .nav a.active,
@@ -174,12 +200,22 @@ a.icon {
 }
 
 .twitter-follow-button {
-	float: right;
+	
 	margin-top: 6px;
+	@media (min-width: 760px) {
+		float: right;
+	}			
+}
+
+.touch .twitter-follow-button {
+	display: none;
 }
 
 .nav a + a {
-	margin-left: 30px;
+	
+	@media (min-width: 760px) {
+		margin-left: 30px;
+	}		
 }
 
 /* ======================================================================================== */

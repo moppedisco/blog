@@ -1519,6 +1519,18 @@ Created:    2012-04-11
 h1 {
   margin-bottom: 16px;
 }
+blockquote {
+  font-style: italic;
+  border-left: 3px solid #ccc;
+  padding-left: 20px;
+  margin-left: 10px;
+  font-size: 114%;
+}
+@media (min-width: 740px) {
+  blockquote {
+    margin-left: -23px;
+  }
+}
 h3 {
   margin: 0;
 }
@@ -1526,6 +1538,11 @@ a {
   font-weight: bold;
   position: relative;
 }
+img {
+  max-width: 100%;
+  width: 100%;
+}
+a.link_highlight:after,
 .no-touch a:after {
   content: "";
   width: 0;
@@ -1543,6 +1560,7 @@ a {
   -o-transition: all 0.3s;
   transition: all 0.3s;
 }
+a.link_highlight:after,
 a:hover:after {
   width: 100%;
   left: 0;

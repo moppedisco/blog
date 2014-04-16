@@ -1538,10 +1538,6 @@ a {
   font-weight: bold;
   position: relative;
 }
-img {
-  max-width: 100%;
-  width: 100%;
-}
 a.link_highlight:after,
 .no-touch a:after {
   content: "";
@@ -1801,6 +1797,11 @@ a.icon {
 }
 .post-listing h2 {
   margin: 0;
+}
+.post img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
 }
 /* ============================================ */
 /* POST EXTRA */

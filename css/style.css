@@ -1727,6 +1727,8 @@ a.icon {
 .intro .cats {
   vertical-align: top;
   margin: 0 5px;
+  width: 50px;
+  max-width: none;
 }
 .home .nav {
   opacity: 0;
@@ -1786,6 +1788,7 @@ a.icon {
 /* POST */
 .post h1 {
   margin: 0;
+  line-height: 50px;
 }
 .post h2 {
   font-weight: bold;

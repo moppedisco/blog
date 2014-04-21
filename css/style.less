@@ -18,6 +18,7 @@
 
 h1 { 
 	margin-bottom: @half-spacing-unit*1px; 
+	line-height: 50px;
 }
 
 blockquote {
@@ -177,6 +178,13 @@ a.icon {
 		padding: 0;
 	}	
 
+}
+
+.meta {
+	text-align: center;	
+	@media (min-width: 760px) {
+		text-align: left;
+	}	
 }
 
 /* ======================================================================================== */
@@ -353,7 +361,6 @@ a.icon {
 
 .post h1 {
 	margin: 0;
-	line-height: 50px;
 	text-align: center;
 	
 	@media (min-width: 760px) {

@@ -22,13 +22,16 @@ h1 {
 
 blockquote {
 	font-style: italic;
-	border-left: 3px solid #ccc;
+	border-left: 3px solid red;
 	padding-left: 20px;
 	margin-left: 10px;	
-	font-size: 114%;
+	font-size: 133%;
+	line-height: 38px;
+	margin-top: @base-spacing-unit*2px;
+	margin-bottom: @base-spacing-unit*2px;			
 
 	@media (min-width: 740px) {
-	margin-left: -23px;	
+		margin-left: -23px;	
 	}	
 
 }
@@ -40,6 +43,11 @@ h3 {
 a { 
 	font-weight: bold;
 	position: relative;
+	border-bottom: 1px solid #000;
+}
+
+.link_highlight {
+	border:none;
 }
 
 a.link_highlight:after,
@@ -149,6 +157,26 @@ a.icon {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
+}
+
+.ul-inline {
+	margin-left: 19px;
+}
+
+.row {
+	margin: 0;
+	@media (min-width: 760px) {
+		margin: 0 -@grids-gutter*1px;
+	}
+}
+
+.row .unit {
+	@media (max-width: 760px) {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}	
+
 }
 
 /* ======================================================================================== */
@@ -326,6 +354,11 @@ a.icon {
 .post h1 {
 	margin: 0;
 	line-height: 50px;
+	text-align: center;
+	
+	@media (min-width: 760px) {
+		text-align: left;
+	}	
 }
 
 .post h2 {
@@ -354,10 +387,11 @@ a.icon {
 
 .fullWidth {
 
-	margin-bottom: @base-spacing-unit*3px;	
+	margin-bottom: @base-spacing-unit*1px;	
 	position: relative;
 	@media (min-width: 1000px) {
 		margin-right: -110px;
+		margin-bottom: @base-spacing-unit*2px;	
 	}
 	
 }

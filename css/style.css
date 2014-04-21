@@ -1521,10 +1521,13 @@ h1 {
 }
 blockquote {
   font-style: italic;
-  border-left: 3px solid #ccc;
+  border-left: 3px solid red;
   padding-left: 20px;
   margin-left: 10px;
-  font-size: 114%;
+  font-size: 133%;
+  line-height: 38px;
+  margin-top: 64px;
+  margin-bottom: 64px;
 }
 @media (min-width: 740px) {
   blockquote {
@@ -1537,6 +1540,10 @@ h3 {
 a {
   font-weight: bold;
   position: relative;
+  border-bottom: 1px solid #000;
+}
+.link_highlight {
+  border: none;
 }
 a.link_highlight:after,
 .no-touch a:after {
@@ -1628,6 +1635,24 @@ a.icon {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+.ul-inline {
+  margin-left: 19px;
+}
+.row {
+  margin: 0;
+}
+@media (min-width: 760px) {
+  .row {
+    margin: 0 -30px;
+  }
+}
+@media (max-width: 760px) {
+  .row .unit {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
 }
 /* ======================================================================================== */
 /* ======================================================================================== */
@@ -1785,6 +1810,12 @@ a.icon {
 .post h1 {
   margin: 0;
   line-height: 50px;
+  text-align: center;
+}
+@media (min-width: 760px) {
+  .post h1 {
+    text-align: left;
+  }
 }
 .post h2 {
   font-weight: bold;
@@ -1806,12 +1837,13 @@ a.icon {
 /* ============================================ */
 /* POST EXTRA */
 .fullWidth {
-  margin-bottom: 96px;
+  margin-bottom: 32px;
   position: relative;
 }
 @media (min-width: 1000px) {
   .fullWidth {
     margin-right: -110px;
+    margin-bottom: 64px;
   }
 }
 .fullWidth h3 {

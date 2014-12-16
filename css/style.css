@@ -467,7 +467,7 @@ html {
 }
 body {
   background: #ffffff;
-  color: #333333;
+  color: #000000;
 }
 h1,
 h2,
@@ -613,42 +613,42 @@ h1,
   font-size: 36px;
   font-size: 2.25rem;
   line-height: 1.4444444444444444;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h2,
 .beta {
   font-size: 22px;
   font-size: 1.375rem;
   line-height: 1.1818181818181819;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h3,
 .gamma {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.4444444444444444;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h4,
 .delta {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.625;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h5,
 .epsilon {
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.625;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 h6,
 .zeta {
   font-size: 14px;
   font-size: 0.875rem;
   line-height: 1.8571428571428572;
-  font-family: 'Merriweather', Georgia, serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .giga {
   font-size: 96px;
@@ -1198,6 +1198,77 @@ Created:    2012-04-11
 .media .bd > :last-child {
   margin-bottom: 0;
 }
+/*------------------------------------*\
+    $SPRITE
+\*------------------------------------*/
+.sprite,
+.icon {
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  /**
+     * So using `.icon` on certain elements doesn’t make a visual difference.
+     */
+
+  font-style: normal;
+  font-weight: normal;
+  /**
+     * So icons added using `.icon` sit in the centre of the element.
+     */
+
+  text-align: center;
+}
+.sprite {
+  /**
+     * The typical size of most icons. Override in your theme stylesheet.
+     */
+
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  /*
+     * H5BP method image replacement:
+     * github.com/h5bp/html5-boilerplate/commit/adecc5da035d6d76b77e3fa95c6abde841073da2
+     */
+
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+.sprite:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+}
+/**
+ * Set up icon font
+ */
+.icon {
+  font-size: 16px;
+  /**
+     * Place the icon in a box the exact same dimensions as the icon itself.
+     */
+
+  width: 1em;
+  height: 1em;
+}
+.icon:before {
+  content: attr(data-icon);
+}
+/**
+ * Icon size modifiers.
+ */
+.icon--large {
+  font-size: 32px;
+}
+.icon--huge {
+  font-size: 64px;
+}
+.icon--natural {
+  font-size: inherit;
+}
 /**
  * Design includes
  */
@@ -1258,6 +1329,12 @@ Created:    2012-04-11
   font-weight: normal;
   font-style: normal;
 }
+html,
+body,
+.page-section--intro {
+  width: 100%;
+  height: 100%;
+}
 .page-section {
   padding: 60px 0;
 }
@@ -1266,6 +1343,21 @@ Created:    2012-04-11
   width: 100%;
   margin: 0 auto;
 }
+.page-section--intro {
+  padding-top: 120px;
+  background: #b5b3b0;
+  color: #fff;
+  transition: background 0.5s;
+}
+.page-section--intro.loaded {
+  background: none;
+}
+h1 {
+  color: #000;
+}
+.yacine {
+  opacity: 0;
+}
 .page-section__name {
   font-size: 60px;
   font-size: 3.75rem;
@@ -1273,9 +1365,41 @@ Created:    2012-04-11
   margin-bottom: 78px;
   margin-bottom: 4.875rem;
 }
+.intro-seciton__nameTitle {
+  font-size: 44px;
+  line-height: 120%;
+  height: 52px;
+  overflow: hidden;
+  margin: 0;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+.intro-seciton__nameTitle ul {
+  list-style: none;
+  margin: 0;
+}
+.intro-section__name {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  text-align: right;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.intro-section__desc {
+  font-size: 22px;
+  line-height: 150%;
+  top: 20px;
+  color: #000;
+}
 .intro-section__top {
   margin-bottom: 78px;
   margin-bottom: 4.875rem;
+}
+.intro-section__bottom {
+  width: 50%;
+  position: relative;
+  margin-left: 60px;
 }
 .intro-section__subheader {
   font-size: 22px;
@@ -1285,6 +1409,21 @@ Created:    2012-04-11
   background: #eee;
 }
 .single-work {
-  margin-bottom: 52px;
-  margin-bottom: 3.25rem;
+  margin-bottom: 104px;
+  margin-bottom: 6.5rem;
+}
+.site-foot {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  width: 30px;
+  white-space: nowrap;
+}
+.site-foot a {
+  display: block;
+}
+.site-foot span {
+  transform: rotate(-90deg) translateY(-6px);
+  transform-origin: 0 0;
+  display: block;
 }

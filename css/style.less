@@ -32,6 +32,13 @@
 	font-style: normal;
 }
 
+html,
+body,
+.page-section--intro {
+	width: 100%;
+	height: 100%;
+}
+
 .page-section {
 	padding: 60px 0;
 }
@@ -42,16 +49,77 @@
 	margin: 0 auto;	
 }
 
+.page-section--intro {
+	padding-top: 120px;
+	background: #b5b3b0;
+	color: #fff;
+	
+	transition: background 0.5s;
+
+	&.loaded {
+		background: none;
+	}
+}
+
+h1 {
+	color: #000;
+}
+
+.yacine {
+	opacity: 0;
+}
+
 .page-section__name {
 	.mega;
 	.vertical-rhytm(3);
+}
+
+.intro-seciton__nameTitle {
+	
+	overflow: hidden;
+	font-size: 44px;
+	line-height: 120%;
+	height: 52px;
+	overflow: hidden;
+	margin: 0;
+	font-weight: bold;
+
+	& ul {
+		list-style: none;
+		margin: 0;
+	}
+
+	transition: color 0.5s;
+
+	.loaded & {
+		// color: #000;
+	}
+}
+
+.intro-section__name {
+	position: fixed;
+	top: 40px;
+	right: 40px;
+	text-align: right;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.intro-section__desc {
+	font-size: 22px;
+	line-height: 150%;
+	top: 20px;
+	color: #000;
 }
 
 .intro-section__top {
 	.vertical-rhytm(3);
 }
 
-.intro-section__profilePic {
+.intro-section__bottom {
+	width: 50%;
+	position: relative;
+	margin-left: 60px;
 
 }
 
@@ -65,5 +133,24 @@
 }
 
 .single-work {
-	.vertical-rhytm(2);
+	.vertical-rhytm(4);
+}
+
+.site-foot {
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	width: 30px;
+	white-space: nowrap;
+
+	a {
+		display: block;
+	}
+
+	span {
+		transform: rotate(-90deg) translateY(-6px);
+		transform-origin: 0 0;
+		display: block;
+	}
+
 }

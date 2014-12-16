@@ -1,9 +1,41 @@
 <footer class="site-foot" role="footer">
 	<div class="page">
-		<span>© 2014 Yacine Belarbi</span>
+		<span>© Yacine Belarbi</span>
 		<a target="_blank" title="Mail" href="mailto:yacbel@gmail.com" class="icon">✉</a>
 		<a target="_blank" title="Github" href="https://github.com/moppedisco/" class="icon icon-social"></a>
 		<a target="_blank" title="Twitter" href="https://twitter.com/moppedisco" class="icon icon-social"></a>
 		<a target="_blank" title="LinkedIn" href="http://ch.linkedin.com/in/yacinebelarbi" class="icon icon-social"></a>
 	</div>
 </footer>
+<script src="js/jquery.1.9.0.min.js"></script>
+<script src="js/jquery.transit.js"></script>
+<script>
+(function(window){
+
+	function init(){
+
+		$(".intro-seciton__nameTitle ul").transition({
+			y: "+=-52px",
+			delay: 400
+		},600,'snap').transition({
+			y: "+=-52px",
+			delay: 200
+		},600,'snap',function(){
+			$(".page-section--intro").addClass("loaded");
+			$(".yacine").transition({
+				y: "-52px",
+				opacity: "1",
+				delay: 700
+			})
+		});
+	}
+
+	window.Application = {
+		init: init
+	}
+
+}(window))  // Self execute
+
+Application.init();
+	
+</script>

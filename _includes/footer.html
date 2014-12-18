@@ -1,10 +1,10 @@
 <footer class="site-foot" role="footer">
 	<div class="page">
-		<span>© Yacine Belarbi</span>
 		<a target="_blank" title="Mail" href="mailto:yacbel@gmail.com" class="icon">✉</a>
 		<a target="_blank" title="Github" href="https://github.com/moppedisco/" class="icon icon-social"></a>
 		<a target="_blank" title="Twitter" href="https://twitter.com/moppedisco" class="icon icon-social"></a>
 		<a target="_blank" title="LinkedIn" href="http://ch.linkedin.com/in/yacinebelarbi" class="icon icon-social"></a>
+		<a target="_blank" title="Mute" class="icon">⏷</a>
 	</div>
 </footer>
 <script src="js/jquery.1.9.0.min.js"></script>
@@ -26,7 +26,11 @@
 				y: "-52px",
 				opacity: "1",
 				delay: 700
-			})
+			});
+			$(".site-foot").transition({
+				x: "-60px",
+				delay: 700
+			});
 		});
 	}
 

@@ -49,6 +49,25 @@ body,
 	margin: 0 auto;	
 }
 
+.site-nav {
+
+	position: fixed;
+	top: 120px;
+	right: 30px;
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	height: 19px;
+	overflow: hidden;
+
+	ul {
+		list-style: none;
+		margin: 0;
+	}
+}
+
+
 .page-section--intro {
 	padding-top: 120px;
 	background: #b5b3b0;
@@ -83,6 +102,7 @@ h1 {
 	overflow: hidden;
 	margin: 0;
 	font-weight: bold;
+	white-space: nowrap;
 
 	& ul {
 		list-style: none;
@@ -119,8 +139,6 @@ h1 {
 .intro-section__bottom {
 	width: 50%;
 	position: relative;
-	margin-left: 60px;
-
 }
 
 .intro-section__subheader {
@@ -139,18 +157,40 @@ h1 {
 .site-foot {
 	position: fixed;
 	bottom: 20px;
-	right: 30px;
+	right: -30px;
 	width: 30px;
 	white-space: nowrap;
+	opacity: 0.3;
+	transition: opacity 0.5s;
+
+	&:hover {
+		opacity: 1;
+	}
 
 	a {
 		display: block;
+		color: #000;
 	}
 
 	span {
-		transform: rotate(-90deg) translateY(-6px);
+		transform: rotate(-90deg) translateY(6px);
 		transform-origin: 0 0;
 		display: block;
 	}
 
+}
+
+.icon {
+	font-family: 'entypo';
+	font-size: 45px;
+	font-size: 2.6470588235294117rem;
+	line-height: 45px;
+}
+
+
+.icon-social {
+	font-family: 'entypo-social';
+	font-size: 45px;
+	font-size: 2.6470588235294117rem;
+	line-height: 45px;
 }

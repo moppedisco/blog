@@ -54,7 +54,7 @@
 	&:hover {
 		text-decoration: none;
 		cursor: pointer;
-		border: 1px solid yellow;
+		border: 1px solid #000;
 	}
 }
 
@@ -63,19 +63,23 @@
 }
 
 .work-grid__title {
-	margin: 0 0 5px;
+	margin: 0 0 9px;
+}
+
+.work-grid__intro {
+	line-height: 130%;
 }
 
 .work-grid__item--small {
 	
 	.work-grid__title {
 		font-weight: normal;
-		font-size: 12px;
-		margin-bottom: 7px;
+		font-size: 13px;
+		margin-bottom: 10px;
 	}
 
 	.work-grid__intro {
-		font-size: 12px;
+		font-size: 13px;
 		font-weight: normal;
 	}
 
@@ -90,7 +94,7 @@
 	margin: 0 auto;
 	opacity: 1;
 
-	//transition: opacity 350ms;
+	transition: opacity 200ms;
 
 	.work-grid__item:hover & {
 		opacity: 0;
@@ -99,18 +103,19 @@
 }
 
 .work-grid__more {
-	position: relative;
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
 }
 
 .work-grid__desc {
 	position: absolute;
-	font-size: 12px;
+	font-size: 13px;
 	top: 0;
 	left: 0;
 	opacity: 0;
 	color: #000;
 
-	//transition: opacity 350ms;
+	transition: opacity 200ms;
 
 	.work-grid__item:hover & {
 		opacity: 1;
@@ -125,7 +130,7 @@ body,
 }
 
 .page-section {
-	padding: 60px 0;
+	padding: 30px 0;
 }
 
 .page-section__inner {
@@ -141,7 +146,7 @@ body,
 	right: 30px;
 	text-align: right;
 	text-transform: uppercase;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: bold;
 	height: 19px;
 	overflow: hidden;
@@ -155,7 +160,8 @@ body,
 
 .page-section--intro {
 	padding-top: 120px;
-	background: #b5b3b0;
+	background: url(/images/bg_teaser.jpg) no-repeat;
+	background-size: cover;
 	color: #fff;
 	
 	transition: background 0.5s;
@@ -174,16 +180,14 @@ h1 {
 }
 
 .page-section__name {
-	.mega;
-	.vertical-rhytm(3);
+	.kilo;
+	.vertical-rhytm(1);
 }
 
 .intro-seciton__nameTitle {
-	
+	.kilo;
 	overflow: hidden;
-	font-size: 44px;
-	line-height: 120%;
-	height: 52px;
+	height: 51px;
 	overflow: hidden;
 	margin: 0;
 	font-weight: bold;
@@ -211,10 +215,10 @@ h1 {
 }
 
 .intro-section__desc {
-	font-size: 22px;
-	line-height: 150%;
-	top: 20px;
+	.font-size(18,true);
+	// line-height: 150%;
 	color: #000;
+	padding-right: 15%;
 }
 
 .intro-section__top {

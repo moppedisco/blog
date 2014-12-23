@@ -1,9 +1,5 @@
 <footer class="site-foot" role="footer">
 	<div class="page">
-		<a target="_blank" title="Mail" href="mailto:yacbel@gmail.com" class="icon">✉</a>
-		<a target="_blank" title="Github" href="https://github.com/moppedisco/" class="icon icon-social"></a>
-		<a target="_blank" title="Twitter" href="https://twitter.com/moppedisco" class="icon icon-social"></a>
-		<a target="_blank" title="LinkedIn" href="http://ch.linkedin.com/in/yacinebelarbi" class="icon icon-social"></a>
 		<a target="_blank" title="Mute" class="icon">⏷</a>
 	</div>
 </footer>
@@ -14,24 +10,47 @@
 
 	function init(){
 
-		$(".intro-seciton__nameTitle ul").transition({
-			y: "+=-52px",
-			delay: 400
-		},600,'snap').transition({
-			y: "+=-52px",
-			delay: 200
-		},600,'snap',function(){
-			$(".page-section--intro").addClass("loaded");
-			$(".yacine").transition({
-				y: "-52px",
-				opacity: "1",
-				delay: 700
-			});
-			$(".site-foot").transition({
-				x: "-60px",
-				delay: 700
+		$(".load-section__text ul").transition({
+			y: "+=-56px",
+			delay: 500
+		},500,'snap').transition({
+			y: "+=-55px",
+			delay: 300
+		},500,'snap').transition({
+			y: "+=-55px",
+			delay: 300
+		},500,'snap',function(){
+
+			$(".page-section--loading").transition({
+				opacity: 0,
+				delay: 500
+			},700,function(){
+				$(".page-section--loading").css("z-index","-1");
+
+				$(".logo").transition({
+					y: "+=40px",
+					opacity: "1",
+					delay: 200
+				},'snap');
+
+				$(".intro-section__title").transition({
+					y: "+=80px",
+					opacity: "1",
+					delay: 200
+				},"snap");
+				$(".intro-section__desc").transition({
+					y: "0",
+					opacity: "1",
+					delay: 300
+				},"snap");				
+				$(".site-foot").transition({
+					x: "-60px",
+					delay: 400
+				});						
 			});
 		});
+
+
 	}
 
 	window.Application = {

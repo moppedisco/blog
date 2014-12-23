@@ -1329,6 +1329,18 @@ Created:    2012-04-11
   font-weight: normal;
   font-style: normal;
 }
+.logo {
+  position: fixed;
+  z-index: 10;
+  width: 80px;
+  height: 80px;
+  top: 20px;
+  left: 84px;
+  background-image: url(/images/y.png);
+  background-repeat: no-repeat;
+  background-size: 800px 160px;
+  opacity: 0;
+}
 .work-grid {
   -moz-column-count: 4;
   -webkit-column-count: 4;
@@ -1340,7 +1352,7 @@ Created:    2012-04-11
   display: inline-block;
   margin-bottom: 40px;
   padding: 20px 20px 30px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
 }
 .work-grid__item u {
   border-bottom: 2px solid #000;
@@ -1349,7 +1361,7 @@ Created:    2012-04-11
 .work-grid__item:hover {
   text-decoration: none;
   cursor: pointer;
-  border: 1px solid #000;
+  border: 2px solid #ffcc00;
 }
 .work-grid__intro {
   font-weight: bold;
@@ -1398,23 +1410,10 @@ Created:    2012-04-11
 .work-grid__item:hover .work-grid__desc {
   opacity: 1;
 }
-html,
-body,
-.page-section--intro {
-  width: 100%;
-  height: 100%;
-}
-.page-section {
-  padding: 30px 0;
-}
-.page-section__inner {
-  max-width: 1105px;
-  width: 100%;
-  margin: 0 auto;
-}
 .site-nav {
+  display: none;
   position: fixed;
-  top: 120px;
+  top: 60px;
   right: 30px;
   text-align: right;
   text-transform: uppercase;
@@ -1429,64 +1428,64 @@ body,
 }
 .page-section--intro {
   padding-top: 120px;
-  background: url(/images/bg_teaser.jpg) no-repeat;
-  background-size: cover;
-  color: #fff;
-  transition: background 0.5s;
+  width: 100%;
+  height: 100%;
 }
-.page-section--intro.loaded {
-  background: none;
+.page-section--contact {
+  background: #ffcc00;
+  text-align: center;
+}
+.page-section--contact h1 {
+  color: #000;
 }
 h1 {
   color: #000;
 }
-.yacine {
-  opacity: 0;
-}
 .page-section__name {
-  font-size: 48px;
-  font-size: 2.6666666666666665rem;
-  line-height: 48px;
-  margin-bottom: 28px;
-  margin-bottom: 1.5555555555555556rem;
+  font-size: 60px;
+  font-size: 3.3333333333333335rem;
+  line-height: 60px;
+  margin-bottom: 56px;
+  margin-bottom: 3.111111111111111rem;
 }
-.intro-seciton__nameTitle {
+.load-section__text {
   font-size: 48px;
   font-size: 2.6666666666666665rem;
   line-height: 48px;
-  height: 51px;
+  height: 55px;
+  line-height: 55px;
   overflow: hidden;
   margin: 0;
   font-weight: bold;
   white-space: nowrap;
-  transition: color 0.5s;
 }
-.intro-seciton__nameTitle ul {
+.load-section__text ul {
   list-style: none;
   margin: 0;
 }
-.intro-section__name {
-  position: fixed;
-  top: 40px;
-  right: 40px;
-  text-align: right;
-  font-size: 14px;
-  text-transform: uppercase;
+.intro-section__title {
+  font-size: 60px;
+  font-size: 3.3333333333333335rem;
+  line-height: 60px;
+  margin-bottom: 56px;
+  margin-bottom: 3.111111111111111rem;
+  opacity: 0;
+  transform: translateY(100px);
+  width: 67%;
 }
 .intro-section__desc {
   font-size: 18px;
   font-size: 1rem;
   line-height: 1.5555555555555556;
+  opacity: 0;
   color: #000;
-  padding-right: 15%;
+  transform: translateY(40px);
+  position: relative;
+  width: 50%;
 }
 .intro-section__top {
   margin-bottom: 84px;
   margin-bottom: 4.666666666666667rem;
-}
-.intro-section__bottom {
-  width: 65%;
-  position: relative;
 }
 .intro-section__subheader {
   font-size: 22px;
@@ -1500,12 +1499,12 @@ h1 {
   margin-bottom: 6.222222222222222rem;
 }
 .site-foot {
+  display: none;
   position: fixed;
   bottom: 20px;
   right: -30px;
   width: 30px;
   white-space: nowrap;
-  opacity: 0.3;
   transition: opacity 0.5s;
 }
 .site-foot:hover {

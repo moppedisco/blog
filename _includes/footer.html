@@ -8,47 +8,83 @@
 <script>
 (function(window){
 
+// setTimeout(function(){ myStopFunction() }, 2000);
+// var myVar = setInterval(function(){ myTimer() }, 300);
+// var i = 0;
+// var hey = 0;
+
+// function myTimer() {
+// 	i++;
+// 	hey = hey - 80;
+// 	$(".logo-two").css({"background-position":hey+"px 0"});
+// 	if(i === 9){
+// 		i = 0;
+// 		hey = 0;
+// 	}
+
+// }
+
+// function myStopFunction() {
+//     // clearInterval(myVar);
+// 	$(".logo").transition({
+// 		scale: "0.2",
+// 		opacity: "0"
+// 	},400,function(){
+// 		$(".page-section--loading").transition({
+// 			opacity: 0,
+// 			delay: 500
+// 		},700,function(){
+// 			$(".page-section--loading").css("z-index","-1");
+// 			$(".logo-two").transition({
+// 				opacity: "1"
+// 			});
+// 			clearInterval(myVar);
+// 		});
+// 	});
+
+
+// }
 	function init(){
 
-		$(".load-section__text ul").transition({
-			y: "+=-56px",
-			delay: 500
-		},500,'snap').transition({
-			y: "+=-55px",
-			delay: 300
-		},500,'snap').transition({
-			y: "+=-55px",
-			delay: 300
-		},500,'snap',function(){
+		// $(".load-section__text ul").transition({
+		// 	y: "+=-56px",
+		// 	delay: 1200
+		// },500,'snap').transition({
+		// 	y: "+=-55px",
+		// 	delay: 500
+		// },500,'snap').transition({
+		// 	y: "+=-55px",
+		// 	delay: 800
+		// },200,'snap',function(){
 
-			$(".page-section--loading").transition({
-				opacity: 0,
-				delay: 500
-			},700,function(){
-				$(".page-section--loading").css("z-index","-1");
+			// $(".page-section--loading").transition({
+			// 	opacity: 0,
+			// 	delay: 500
+			// },700,function(){
+			// 	$(".page-section--loading").css("z-index","-1");
 
-				$(".logo").transition({
-					y: "+=40px",
-					opacity: "1",
-					delay: 200
-				},'snap');
+			// 	$(".logo").transition({
+			// 		y: "+=40px",
+			// 		opacity: "1",
+			// 		delay: 200
+			// 	},'snap');
 
-				$(".intro-section__title").transition({
-					y: "+=80px",
-					opacity: "1",
-					delay: 200
-				},"snap");
-				$(".intro-section__desc").transition({
-					y: "0",
-					opacity: "1",
-					delay: 300
-				},"snap");				
-				$(".site-foot").transition({
-					x: "-60px",
-					delay: 400
-				});						
-			});
-		});
+			// 	$(".intro-section__title").transition({
+			// 		y: "-=20px",
+			// 		opacity: "1",
+			// 		delay: 200
+			// 	},"snap");
+			// 	$(".intro-section__desc").transition({
+			// 		y: "0",
+			// 		opacity: "1",
+			// 		delay: 300
+			// 	},"snap");				
+			// 	$(".site-foot").transition({
+			// 		x: "-60px",
+			// 		delay: 400
+			// 	});						
+			// });
+		// });
 
 
 	}

@@ -446,7 +446,7 @@ table {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 1.125em / 1.5555555555555556 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font: 1.125em / 1.5555555555555556 "proxima-nova", 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -613,42 +613,42 @@ h1,
   font-size: 36px;
   font-size: 2rem;
   line-height: 1.5555555555555556;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
 }
 h2,
 .beta {
   font-size: 22px;
   font-size: 1.2222222222222223rem;
   line-height: 1.2727272727272727;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
 }
 h3,
 .gamma {
   font-size: 18px;
   font-size: 1rem;
   line-height: 1.5555555555555556;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
 }
 h4,
 .delta {
   font-size: 16px;
   font-size: 0.8888888888888888rem;
   line-height: 1.75;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
 }
 h5,
 .epsilon {
   font-size: 16px;
   font-size: 0.8888888888888888rem;
   line-height: 1.75;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
 }
 h6,
 .zeta {
   font-size: 14px;
   font-size: 0.7777777777777778rem;
   line-height: 2;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
 }
 .giga {
   font-size: 96px;
@@ -1315,6 +1315,15 @@ Created:    2012-04-11
 /* ======================================================================================== */
 /* ======================================================================================== */
 /* DEFAULTS */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: normal;
+  font-weight: 700;
+}
 .meta {
   margin-left: 0;
   list-style: none;
@@ -1359,7 +1368,7 @@ Created:    2012-04-11
   right: 60px;
   text-align: right;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: bold;
   height: 19px;
   overflow: hidden;
@@ -1382,7 +1391,7 @@ Created:    2012-04-11
   font-size: 36px;
   font-size: 2rem;
   line-height: 1.5555555555555556;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "proxima-nova";
   line-height: 100%;
 }
 .page-section--loading {
@@ -1461,20 +1470,26 @@ Created:    2012-04-11
 }
 .content-box--hiddenText .content-box__title {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 .content-box--hiddenText .content-box__intro {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 150%;
 }
 .content-box--hiddenText u {
   border-bottom: 1px solid #000;
 }
+.content-box--hiddenText:hover {
+  cursor: default;
+}
 .content-box--hiddenText .content-box__desc {
   opacity: 0.2;
   position: static;
+}
+.content-box--hiddenText .content-box__desc p {
+  margin: 0;
 }
 .content-box--intro {
   margin-left: -20px;
@@ -1484,20 +1499,26 @@ Created:    2012-04-11
 }
 .content-box--intro .content-box__title {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 .content-box--intro .content-box__intro {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 150%;
 }
 .content-box--intro u {
   border-bottom: 1px solid #000;
 }
+.content-box--intro:hover {
+  cursor: default;
+}
 .content-box--intro .content-box__desc {
   opacity: 0.2;
   position: static;
+}
+.content-box--intro .content-box__desc p {
+  margin: 0;
 }
 .content-box--quote {
   margin-left: -20px;
@@ -1505,20 +1526,26 @@ Created:    2012-04-11
 }
 .content-box--quote .content-box__title {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 .content-box--quote .content-box__intro {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 150%;
 }
 .content-box--quote u {
   border-bottom: 1px solid #000;
 }
+.content-box--quote:hover {
+  cursor: default;
+}
 .content-box--quote .content-box__desc {
   opacity: 0.2;
   position: static;
+}
+.content-box--quote .content-box__desc p {
+  margin: 0;
 }
 .content-box__title {
   margin: 0 0 9px;
@@ -1529,11 +1556,11 @@ Created:    2012-04-11
 }
 .content-box--small .content-box__title {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 6px;
 }
 .content-box--small .content-box__intro {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: normal;
   line-height: 150%;
 }
@@ -1556,7 +1583,7 @@ Created:    2012-04-11
 }
 .content-box__desc {
   position: absolute;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 150%;
   top: 0;
   left: 0;

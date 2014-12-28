@@ -542,7 +542,7 @@ textarea:focus {
  * Links
  */
 a {
-  color: #333333;
+  color: #000000;
   text-decoration: none;
 }
 a:hover,
@@ -1315,6 +1315,9 @@ Created:    2012-04-11
 /* ======================================================================================== */
 /* ======================================================================================== */
 /* DEFAULTS */
+.ul-inline {
+  margin-left: 20px;
+}
 @font-face {
   font-family: 'entypo';
   src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');
@@ -1376,6 +1379,7 @@ Created:    2012-04-11
   margin-bottom: 3.111111111111111rem;
 }
 .page-section--loading {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -1418,9 +1422,9 @@ Created:    2012-04-11
   position: static;
 }
 .intro-section__title {
-  font-size: 48px;
-  font-size: 2.6666666666666665rem;
-  line-height: 48px;
+  font-size: 40px;
+  font-size: 2.2222222222222223rem;
+  line-height: 1.4;
   margin-bottom: 56px;
   margin-bottom: 3.111111111111111rem;
   opacity: 1;
@@ -1449,7 +1453,28 @@ Created:    2012-04-11
   cursor: pointer;
   border: 2px solid #4974ff;
 }
+.content-box--hiddenText {
+  margin-left: -20px;
+}
+.content-box--hiddenText .content-box__title {
+  font-weight: normal;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+.content-box--hiddenText .content-box__intro {
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 150%;
+}
+.content-box--hiddenText u {
+  border-bottom: 1px solid #000;
+}
+.content-box--hiddenText .content-box__desc {
+  opacity: 0.2;
+  position: static;
+}
 .content-box--intro {
+  margin-left: -20px;
   width: 220px;
   position: absolute;
   top: 130px;
@@ -1473,6 +1498,7 @@ Created:    2012-04-11
   position: static;
 }
 .content-box--quote {
+  margin-left: -20px;
   width: 254px;
   position: absolute;
   bottom: 20px;

@@ -5,6 +5,7 @@
 </footer>
 <script src="js/jquery.1.9.0.min.js"></script>
 <script src="js/jquery.transit.js"></script>
+<script src="js/jquery.typer.js"></script>
 <script>
 (function(window){
 // setTimeout(function(){ myStopFunction() }, 2000);
@@ -39,6 +40,7 @@
 // }
 	function init(){
 
+		$('[data-typer-targets]').typer();
 		// $(".load-section__text ul").transition({
 		// 	y: "+=-56px",
 		// 	delay: 600

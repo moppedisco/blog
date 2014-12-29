@@ -1342,6 +1342,7 @@ h6 {
   margin-left: 20px;
 }
 .divider {
+  padding: 30px 0;
   text-align: center;
 }
 @font-face {
@@ -1360,7 +1361,8 @@ h6 {
 }
 .logo {
   position: fixed;
-  top: 70px;
+  border: none;
+  top: 55px;
   left: 85px;
   transform: none;
   z-index: 10;
@@ -1371,13 +1373,16 @@ h6 {
   background-size: 100%;
 }
 .site-nav {
+  background: rgba(255, 255, 255, 0.7);
   position: fixed;
-  top: 70px;
-  right: 60px;
-  text-align: right;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
   text-transform: uppercase;
-  font-size: 13px;
-  font-weight: bold;
+  letter-spacing: 1px;
+  font-weight: 700;
   z-index: 99;
 }
 .site-nav ul {
@@ -1386,15 +1391,20 @@ h6 {
 }
 .site-nav li {
   display: inline-block;
-  margin-left: 10px;
+  margin: 0 10px;
 }
 .site-nav a {
-  color: #000;
+  color: #1560fb;
   font-weight: bold;
   border: none;
+  display: inline-block;
+  padding: 13px 0 10px;
+}
+.home .site-nav {
+  display: none;
 }
 .page-section {
-  padding: 120px 0;
+  padding: 40px 0 0;
 }
 .page-section__inner {
   max-width: 1105px;
@@ -1403,10 +1413,9 @@ h6 {
   position: relative;
 }
 .page-section__name {
-  font-size: 36px;
-  font-size: 2rem;
-  line-height: 1.5555555555555556;
-  font-family: "proxima-nova";
+  font-size: 43px;
+  font-size: 2.388888888888889rem;
+  line-height: 1.302325581395349;
   line-height: 100%;
 }
 .page-section--loading {
@@ -1445,17 +1454,13 @@ h6 {
   list-style: none;
   margin: 0;
 }
-.page-section--intro {
-  padding-top: 120px;
-}
 .intro-section__title {
   font-size: 43px;
   font-size: 2.388888888888889rem;
   line-height: 1.302325581395349;
-  margin-bottom: 140px;
-  margin-bottom: 7.777777777777778rem;
+  margin-bottom: 84px;
+  margin-bottom: 4.666666666666667rem;
   opacity: 1;
-  transform: translateY(70px);
 }
 .intro-section__title span {
   color: #ff5122;
@@ -1500,9 +1505,6 @@ h6 {
 .content-box--hiddenText u {
   border-bottom: 1px solid #000;
 }
-.content-box--hiddenText:hover {
-  cursor: default;
-}
 .content-box--hiddenText .content-box__desc {
   opacity: 0.2;
   position: static;
@@ -1515,6 +1517,7 @@ h6 {
   width: 504px;
   margin-left: 30%;
   margin-bottom: 0;
+  position: relative;
 }
 .content-box--intro .content-box__title {
   font-weight: normal;
@@ -1529,9 +1532,6 @@ h6 {
 .content-box--intro u {
   border-bottom: 1px solid #000;
 }
-.content-box--intro:hover {
-  cursor: default;
-}
 .content-box--intro .content-box__desc {
   opacity: 0.2;
   position: static;
@@ -1539,9 +1539,26 @@ h6 {
 .content-box--intro .content-box__desc p {
   margin: 0;
 }
+.content-box--intro:hover:after {
+  z-index: -1;
+  opacity: 0.4;
+}
+.content-box--intro:after {
+  content: "— work —";
+  color: #1560fb;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: rotate(-22deg) translateY(-50%) translateX(-50%);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
 .content-box--quote {
   margin-left: -20px;
   width: 220px;
+  position: relative;
 }
 .content-box--quote .content-box__title {
   font-weight: normal;
@@ -1556,15 +1573,28 @@ h6 {
 .content-box--quote u {
   border-bottom: 1px solid #000;
 }
-.content-box--quote:hover {
-  cursor: default;
-}
 .content-box--quote .content-box__desc {
   opacity: 0.2;
   position: static;
 }
 .content-box--quote .content-box__desc p {
   margin: 0;
+}
+.content-box--quote:hover:after {
+  z-index: -1;
+  opacity: 0.4;
+}
+.content-box--quote:after {
+  content: "— about —";
+  color: #1560fb;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(14deg) translateY(-50%) translateX(-50%);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
 }
 .content-box__title {
   margin: 0 0 9px;

@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .divider {
+	padding: 30px 0;
 	text-align: center;
 }
 
@@ -62,8 +63,10 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .logo {
+	// display: none;
 	position: fixed;
-	top: 70px;
+	border: none;
+	top: 55px;
 	left: 85px;
 	transform: none;
 	z-index: 10;
@@ -75,16 +78,16 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-nav {
-	// display: none;
+	background: rgba(255,255,255,0.7);
 	position: fixed;
-	top: 70px;
-	right: 60px;
-	text-align: right;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
 	text-transform: uppercase;
-	font-size: 13px;
-	font-weight: bold;
-	// height: 19px;
-	// overflow: hidden;
+	letter-spacing: 1px;
+	font-weight: 700;
 	z-index: 99;
 
 	ul {
@@ -94,18 +97,22 @@ h1,h2,h3,h4,h5,h6 {
 
 	li {
 		display: inline-block;
-		margin-left: 10px;
+		margin: 0 10px;
 	}
 
 	a {
-		color: #000;
+		color: #1560fb;
 		font-weight: bold;
 		border: none;
+		display: inline-block;
+		padding: 13px 0 10px;
 	}
+
+	.home & { display: none; }
 }
 
 .page-section {
-	padding: 120px 0;
+	padding: 40px 0 0;
 }
 
 .page-section__inner {
@@ -116,7 +123,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .page-section__name {
-	.alpha;
+	.font-size(43,true);
 	line-height: 100%;
 	// color: #ff5122;
 	// .vertical-rhytm(2);
@@ -162,14 +169,14 @@ h1,h2,h3,h4,h5,h6 {
 
 
 .page-section--intro {
-	padding-top: 120px;	
+	// padding-top: 120px;	
 }
 
 .intro-section__title {
 	.font-size(43,true);
-	.vertical-rhytm(5);
+	.vertical-rhytm(3);
 	opacity: 1;
-	transform: translateY(70px);
+	// transform: translateY(50px);
 	span {
 		color: #ff5122;
 		padding-bottom: 1px;
@@ -209,7 +216,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin-left: -20px;
 	
 	&:hover {
-		cursor: default;
+		// cursor: default;
 	}
 
 	& .content-box__desc {
@@ -227,11 +234,49 @@ h1,h2,h3,h4,h5,h6 {
 	width: 504px;
 	margin-left: 30%;
 	margin-bottom: 0;
+	position: relative;
+
+	&:hover:after {
+		z-index: -1;
+		opacity: 0.4;
+	}
+
+	&:after {
+		content: "— work —";
+		color: #1560fb;
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: rotate(-22deg) translateY(-50%) translateX(-50%);
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 700;
+	}
+
 }
 
 .content-box--quote {
 	.content-box--hiddenText;
 	width: 220px;
+	position: relative;
+
+	&:hover:after {
+		z-index: -1;
+		opacity: 0.4;
+	}
+
+	&:after {
+		content: "— about —";
+		color: #1560fb;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: rotate(14deg) translateY(-50%) translateX(-50%);
+		font-size: 12px;
+		text-transform: uppercase;
+		letter-spacing: 1px;font-weight: 700;
+	}	
 }
 
 .content-box__title {

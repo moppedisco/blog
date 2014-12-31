@@ -1394,9 +1394,6 @@ h6 {
   padding: 2px 0;
   display: block;
 }
-.home .site-nav {
-  display: none;
-}
 .full-bleed-img {
   width: 100%;
   max-width: 100%;
@@ -1434,6 +1431,43 @@ h6 {
   color: #ff5122;
   padding-bottom: 1px;
   border-bottom: 3px solid #ff5122;
+}
+@media (max-width: 800px) {
+  .home-section__intro {
+    margin: 0 30px;
+    font-size: 8vw;
+  }
+}
+@media (max-width: 800px) {
+  .home-section__row {
+    margin: 0;
+  }
+}
+.home-section__leftcol {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 20px;
+  width: 75%;
+}
+@media (max-width: 800px) {
+  .home-section__leftcol {
+    width: 100%;
+    padding: 0;
+  }
+}
+.home-section__rightcol {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding: 0 20px;
+  width: 25%;
+}
+@media (max-width: 800px) {
+  .home-section__rightcol {
+    width: 100%;
+    padding: 0;
+  }
 }
 .data-typer {
   color: deeppink;
@@ -1511,6 +1545,11 @@ h6 {
 .home-section__bio:after {
   content: "— work —";
 }
+@media (max-width: 800px) {
+  .home-section__bio {
+    display: none;
+  }
+}
 .home-section__quote {
   color: #000;
   display: inline-block;
@@ -1558,6 +1597,11 @@ h6 {
   content: "— about —";
   transform: rotate(12deg) translateY(-50%) translateX(-50%);
   -webkit-transform: rotate(12deg) translateY(-50%) translateX(-50%);
+}
+@media (max-width: 800px) {
+  .home-section__quote {
+    display: none;
+  }
 }
 .content-box {
   color: #000;

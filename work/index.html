@@ -6,9 +6,27 @@ name: page-work
 <section class="page-section">
 	<header class="page-section__intro">
 		<h2 class="page-section__name">Work</h2>
-		<p>This is the nice bit. The part where I shut up and just show you the fruits of my labour like <span class="data-typer" data-typer-targets="websites,blog posts,hacks,concepts,side projects,client work ">Websites</span>.</p>
+		<p>This is the nice bit. The part where I shut up and just show you the fruits of my labour like.</p>
 	</header>
 	<div class="work-grid">
+
+		{% for post in site.posts %}
+			<a class="content-box {{post.postClass}}" title="{{ post.title }}" href="{{ post.url }}">
+				<h3 class="content-box__title"><u>{{post.title}}</u></h3>
+				<p class="content-box__intro">{{post.subtitle}} — {{post.category}}</p>
+				<div class="content-box__more">
+					<img class="content-box__image" src="{{post.thumbnail}}" alt="{{post.title}}">
+					<div class="content-box__desc">
+						<p>{{post.description}}</p>
+						{% for tag in post.tags %}
+							<b>{{tag}}</b>
+						{% endfor %}
+					</div>
+				</div>
+			</a>	
+		{% endfor %}		
+	</div>
+<!-- 	<div class="work-grid">
 		<a href="/zuri-kino/" class="content-box">
 			<h3 class="content-box__title"><u>zuri-kino.ch</u></h3>
 			<p class="content-box__intro">Side project - Cinema site</p>
@@ -129,5 +147,5 @@ name: page-work
 				</div>
 			</div>
 		</a>			
-	</div>
+	</div> -->
 </section>

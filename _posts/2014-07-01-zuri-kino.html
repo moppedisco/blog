@@ -12,8 +12,8 @@ description: 	Cinema sites are pretty crap. Never any IMDB ratings and always to
 ---
 <img class="full-bleed-img" src="{{page.cover}}" alt="" />
 <section class="page-section">
-	<article class="row">
-		<div class="unit size1of4">
+	<article class="row single-post-row">
+		<div class="single-post-leftcol">
 			<aside class="meta">
 				<b>Link: </b><a class="link_highlight" href="http://{{page.link}}" target="_blank">{{page.link}}</a><br>
 				<b>Category: </b>{{page.category}} <br>
@@ -28,10 +28,9 @@ description: 	Cinema sites are pretty crap. Never any IMDB ratings and always to
 				</div>
 			</aside>				
 		</div>
-		<div class="unit size1of2">
+		<div class="single-post-middlecol">
 			{{ page.date | date: "%b %Y" }}
 			<h1 class="page-section__name">{{page.subtitle}}</h1>
-			<h2>Intro</h2>
 			<p>Navigating websites in a foreign language obviously has its difficulties. With me currently living in Switzerland this has become present in my daily online life when checking restaurant opening hours, buying movie tickets etc.</p>
 			<p>The latter one, finding what movies run at the cinemas, if found especially annoying and not just because of the foreign language barrier. The crook here was <a href="http://cineman.ch" target="_blank">cineman.ch</a>, Switzerlands biggest movie site. Tons of ads and poor information structure I found myself opening new tabs for each movie to compare movie data and simultaneously checking their IMDB rating.</p>
 			<p>Surely web 2014 can be done better. I decided giving it a go starting by scraping cinema showtimes from google to make this real and not just a beautiful jpg.</p>
@@ -42,7 +41,7 @@ description: 	Cinema sites are pretty crap. Never any IMDB ratings and always to
 
 			<h2>Version 2</h2>
 		</div>
-		<div class="unit size1of4">
+		<div class="single-post-rightcol">
 			<aside class="content-box content-box--hiddenText">
 				<h3 class="content-box__title"><u>Goals</u></h3>
 				<div class="content-box__more">

@@ -10,10 +10,10 @@ date:   		2011-02-01
 category: 		Side project
 description: 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis veritatis minus sit nesciunt in cumque pariatur deserunt labore, animi, id, perferendis incidunt quis? Velit dicta, aut quia consequatur quidem repellat.
 ---
-<img class="full-bleed-img" src="/images/cover-varskaviata.jpg" alt="" />
+<img class="full-bleed-img" src="{{page.cover}}" alt="" />
 <section class="page-section">
-	<article class="row">
-		<div class="unit size1of4">
+	<article class="row single-post-row">
+		<div class="single-post-leftcol">
 			<aside class="meta">
 				<b>Link: </b><a class="link_highlight" href="http://{{page.link}}" target="_blank">{{page.link}}</a><br>
 				<b>Category: </b>{{page.category}} <br>
@@ -28,10 +28,9 @@ description: 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis 
 				</div>
 			</aside>				
 		</div>
-		<div class="unit size1of2">
+		<div class="single-post-middlecol">
 			{{ page.date | date: "%b %Y" }}
 			<h1 class="page-section__name">{{page.subtitle}}</h1>
-			<h2>Intro</h2>
 			<p>If you don't bring food from home or you're one of those guys working for a hot startup that provides free meals then <b>what</b> and <b>where</b> to eat is two questions you get confronted with on a regular basis around noon. </p>
 
 			<p>Using services like Google or Yelp can be useful but are not very accurate when it comes to showing that fast food hotdog joint around the corner that you know exist but doesn’t show up in your searches. With this in mind, you can't then really trust these services for being the most accurate search tool.</p>
@@ -45,7 +44,7 @@ description: 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis 
 			<h2>Navigating results</h2>
 			<p>Navigating the results and getting detailed information about a restaurant was a feature that needed to be fast and seamless. By showing restaurants names on mouseover it was an easy and unintrusive way of "filtering" results that the user might already have come across. <p>Clicking the restaurants would open an expanded box with detailed information about the restaurant. This meant that detailed information about a restaurant would always be only <b>1 click</b> away.</p>
 		</div>
-		<div class="unit size1of4">
+		<div class="single-post-rightcol">
 			<aside class="content-box content-box--hiddenText">
 				<h3 class="content-box__title"><u>Goals</u></h3>
 				<div class="content-box__more">

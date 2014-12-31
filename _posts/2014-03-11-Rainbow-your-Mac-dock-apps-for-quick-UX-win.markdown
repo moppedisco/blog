@@ -2,7 +2,6 @@
 layout: 		post
 title:  		Rainbow your Mac dock apps for quick UX win
 subtitle: 		
-tags: 			custom map search, scraper
 thumbnail: 		/images/thumbnail_rainbow-post.jpg
 link:			varskaviata.nu
 cover:			/images/cover-varskaviata.jpg
@@ -12,11 +11,11 @@ postClass:		content-box--small
 description: 	When stting in front of a computer our eyes do a lot of work. Some tasks are very slow and cognitivly "heavy" like finding that file on your desktop. To help yourself there is small tricks you can do.
 ---
 <section class="page-section">
-	<article class="row">
-		<div class="unit size1of4">
+	<article class="row single-post-row">
+		<div class="single-post-leftcol">
 			<b>Category: </b>{{page.category}} <br>
 		</div>
-		<div class="unit size1of2">
+		<div class="single-post-middlecol">
 			{{ page.date | date: "%b %Y" }}
 			<h1 class="page-section__name">{{page.title}}</h1>
 			<p>Setting up a new computer is great fun. There is a certain satisfaction in starting fresh and getting everything just right. I especially enjoy installing all my must have apps and try optimizing them in terms of <br>
@@ -38,5 +37,3 @@ description: 	When stting in front of a computer our eyes do a lot of work. Some
 		</div>
 	</article>
 </section>
-
-

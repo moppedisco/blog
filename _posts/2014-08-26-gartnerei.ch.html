@@ -1,0 +1,29 @@
+---
+layout: 		post
+title:  		gärtnerei.ch
+subtitle: 		Restaurant website
+tags: 			Mobile, Twitter Bootstrap, Wordpress
+thumbnail: 		/images/thumbnail_gartnerei.jpg
+link:			gartnerei.ch
+cover:			
+date:   		2014-08-26
+category: 		Freelance
+postClass:		content-box--small
+description: 	A previous satisfied client recommended me for this project which required building a saucy one pager for a hot healthy startup in the restaurant scene.
+---
+<img class="full-bleed-img" src="{{page.cover}}" alt="" />
+<section class="page-section">
+	<article class="row single-post-row">
+		<div class="single-post-leftcol">
+			<aside class="meta">
+				<b>Link: </b><a class="link_highlight" href="http://{{page.link}}" target="_blank">{{page.link}}</a><br>
+				<b>Category: </b>{{page.category}} <br>
+			</aside>				
+		</div>
+		<div class="single-post-middlecol">
+			{{ page.date | date: "%b %Y" }}
+			<h1 class="page-section__name">{{page.subtitle}}</h1>
+
+		</div>
+	</article>
+</section>

@@ -1,0 +1,29 @@
+---
+layout: 		post
+title:  		yourtomorrow.com
+subtitle: 		Campaign website
+tags: 			UI design, wireframes, HTML5 video
+thumbnail: 		/images/thumbnail_yourtomorrow.jpg
+link:			yourtomorrow.com
+cover:			
+date:   		2014-05-01
+category: 		Employment
+postClass:		content-box--small
+description: 	Travelling and learning can be a great way to get out and see the world. We build a tool that would show you a unique video of your self based on your dreams and hopes of the future. 
+---
+<img class="full-bleed-img" src="{{page.cover}}" alt="" />
+<section class="page-section">
+	<article class="row single-post-row">
+		<div class="single-post-leftcol">
+			<aside class="meta">
+				<b>Link: </b><a class="link_highlight" href="http://{{page.link}}" target="_blank">{{page.link}}</a><br>
+				<b>Category: </b>{{page.category}} <br>
+			</aside>				
+		</div>
+		<div class="single-post-middlecol">
+			{{ page.date | date: "%b %Y" }}
+			<h1 class="page-section__name">{{page.subtitle}}</h1>
+
+		</div>
+	</article>
+</section>

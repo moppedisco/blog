@@ -1,10 +1,13 @@
 <script src="/js/jquery.1.9.0.min.js"></script>
-<!-- <script src="/js/jquery.transit.js"></script> -->
 <script src="/js/jquery.typer.js"></script>
 <script>
 (function(window){
 	function init(){
 		$('[data-typer-targets]').typer();
+		if(!Modernizr.touch){
+			var url = $(".website-iframe").attr("data-src");
+			$(".website-iframe").attr("src",url);
+		}
 	}
 
 	window.Application = {

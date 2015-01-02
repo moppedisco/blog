@@ -16,6 +16,21 @@
 	-webkit-font-smoothing: antialiased;
 }
 
+.website-iframe {
+	position: absolute;
+	z-index: 9999;
+	top: 20px;
+	left: 20px;
+	pointer-events: auto;
+	transform: matrix3d(0.792978043912176, -0.001187624750499, 0, -0.000001996007984031, -0.0198463211306682, 0.805175133309467, 0, -0.000024364702248863, 0, 0, 1, 0, 218, 95, 0, 1);
+	transform-origin: 0px 0px 0px;
+	border: none;
+	.touch & {
+		display: none;
+	}
+}
+
+
 @font-face {
 	font-family: 'entypo';
 	src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo.eot');

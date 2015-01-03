@@ -4,10 +4,11 @@ title: Work
 name: page-work
 ---
 <section class="page-section">
-	<header class="page-section__intro">
+	<h1 class="page-section__name" style="text-align: center;">Work</h1>
+<!-- 	<header class="page-section__intro">
 		<h1 class="page-section__name">Work</h1>
 		<p>This is the nice bit. The part where I shut up and just show you the fruits of my labour.</p>
-	</header>
+	</header> -->
 	<div class="work-grid">
 
 		{% for post in site.posts %}
@@ -15,8 +16,7 @@ name: page-work
 				<h3 class="content-box__title"><u>{{post.title}}</u></h3>
 				<p class="content-box__intro">{{post.subtitle}} — {{post.category}}</p>
 				<div class="content-box__more">
-					<img class="content-box__image" src="{{post.thumbnail}}" alt="{{post.title}}">
-					<div class="content-box__desc">
+					<div class="content-box__desc" style="background-image: url({{post.thumbnail}})" title="{{post.title}}">
 						<p>{{post.description}}</p>
 						{% for tag in post.tags %}
 							<b>{{tag}}</b>

@@ -1351,7 +1351,6 @@ a {
   padding-bottom: 1px;
   border-bottom: 2px solid #EB0A06;
   font-weight: 400;
-  transition: border 0.1s;
 }
 a:hover {
   border-bottom: 2px solid transparent;
@@ -1558,6 +1557,7 @@ h6 {
 .content-box--hiddenText .content-box__desc {
   opacity: 0.2;
   position: static;
+  color: #000;
 }
 .content-box--hiddenText:hover .content-box__desc {
   opacity: 1;
@@ -1751,6 +1751,7 @@ h6 {
 .home-section__quote .content-box__desc {
   opacity: 0.2;
   position: static;
+  color: #000;
 }
 .home-section__bio:hover .content-box__desc,
 .home-section__quote:hover .content-box__desc {

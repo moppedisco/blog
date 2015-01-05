@@ -13,7 +13,6 @@ description: 	When stting in front of a computer our eyes do a lot of work. Some
 <section class="page-section">
 	<article class="row single-post-row">
 		<div class="single-post-leftcol">
-			<b>Category: </b>{{page.category}} <br>
 		</div>
 		<div class="single-post-middlecol">
 			{{ page.date | date: "%b %Y" }}

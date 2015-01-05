@@ -1379,7 +1379,7 @@ h6 {
 }
 @media (max-width: 800px) {
   .divider--top {
-    padding-top: 20px;
+    padding-top: 12px;
   }
 }
 .divider--bottom {
@@ -1389,8 +1389,8 @@ h6 {
 .logo {
   position: fixed;
   border: none;
-  top: 25px;
-  left: 25px;
+  top: 16px;
+  left: 16px;
   transform: none;
   z-index: 10;
   width: 50px;
@@ -1407,8 +1407,8 @@ h6 {
 }
 .site-nav {
   position: fixed;
-  bottom: 20px;
-  right: 0;
+  bottom: 10px;
+  right: 13px;
   text-align: right;
   font-size: 12px;
   line-height: 100%;
@@ -1441,6 +1441,11 @@ h6 {
   list-style: none;
   margin: 0;
 }
+@media (max-width: 800px) {
+  .site-nav {
+    right: 0px;
+  }
+}
 .full-bleed-img {
   width: 100%;
   max-width: 100%;
@@ -1449,7 +1454,7 @@ h6 {
   z-index: 2;
 }
 .page-section {
-  padding: 130px 0;
+  padding: 100px 0;
   max-width: 1105px;
   width: 100%;
   margin: 0 auto;
@@ -1457,7 +1462,7 @@ h6 {
 }
 @media (max-width: 800px) {
   .page-section {
-    padding: 90px 0;
+    padding: 30px 0;
   }
   .page-work-single .page-section {
     padding: 20px 0;
@@ -1468,7 +1473,7 @@ h6 {
 }
 .page-section__intro {
   text-align: center;
-  margin: 0 auto;
+  margin: 20px auto;
   width: 50%;
   margin-bottom: 84px;
   margin-bottom: 4.666666666666667rem;
@@ -1529,7 +1534,7 @@ h6 {
     content: "☞";
     width: 100%;
     text-align: center;
-    display: block;
+    display: none;
     top: 50%;
     right: 50%;
     color: orange;
@@ -1538,7 +1543,6 @@ h6 {
 }
 .content-box--hiddenText {
   margin-left: -20px;
-  padding: 20px;
 }
 .content-box--hiddenText .content-box__title {
   font-weight: normal;
@@ -1624,8 +1628,8 @@ h6 {
   font-size: 43px;
   font-size: 2.388888888888889rem;
   line-height: 1.302325581395349;
-  margin-bottom: 84px;
-  margin-bottom: 4.666666666666667rem;
+  margin-bottom: 28px;
+  margin-bottom: 1.5555555555555556rem;
   opacity: 1;
 }
 .home-section__intro span {
@@ -1635,7 +1639,7 @@ h6 {
 }
 @media (max-width: 800px) {
   .home-section__intro {
-    margin: 0 30px;
+    margin: 60px 20px 0;
     font-size: 11.3vw;
   }
 }
@@ -1650,7 +1654,7 @@ h6 {
   min-height: 1px;
   padding: 0 20px;
   width: 75%;
-  transform: translateY(40px);
+  padding-top: 110px;
 }
 @media (max-width: 800px) {
   .home-section__leftcol {
@@ -1682,10 +1686,7 @@ h6 {
   border: none;
   transition: none;
   margin-left: -20px;
-  padding: 20px;
   position: relative;
-  padding: 18px;
-  border: 2px solid transparent;
 }
 .home-section__bio u,
 .home-section__quote u {
@@ -1723,7 +1724,7 @@ h6 {
     content: "☞";
     width: 100%;
     text-align: center;
-    display: block;
+    display: none;
     top: 50%;
     right: 50%;
     color: orange;
@@ -1761,10 +1762,6 @@ h6 {
 .home-section__quote .content-box__desc p {
   margin: 0;
 }
-.home-section__bio:hover,
-.home-section__quote:hover {
-  padding-bottom: 0;
-}
 .home-section__bio .content-box__desc,
 .home-section__quote .content-box__desc {
   color: #000;
@@ -1772,7 +1769,7 @@ h6 {
 }
 .home-section__bio:after,
 .home-section__quote:after {
-  content: "☞";
+  content: "";
   color: #1560fb;
   font-size: 32px;
   font-weight: 700;
@@ -1783,6 +1780,7 @@ h6 {
   width: 100%;
   margin-top: 20px;
   transition: transform 0.4s;
+  display: none;
 }
 .home-section__bio:hover:after,
 .home-section__quote:hover:after {
@@ -1790,7 +1788,7 @@ h6 {
 }
 .home-section__bio {
   width: 25%;
-  margin: 0 auto;
+  margin: 30px auto 0;
   display: block;
 }
 @media (max-width: 800px) {
@@ -1820,6 +1818,10 @@ h6 {
     column-count: 2;
     margin: 0 20px;
   }
+}
+.meta {
+  margin-bottom: 28px;
+  margin-bottom: 1.5555555555555556rem;
 }
 @media (max-width: 800px) {
   .single-post-row {
@@ -1860,13 +1862,13 @@ h6 {
   bottom: 16px;
   left: 50%;
   z-index: 1;
-  border-bottom: none;
+  border-bottom-color: transparent;
   width: 33%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   margin-left: -26%;
   text-align: right;
-  font-size: 16px;
+  font-size: 14px;
   color: #42A7B2;
 }
 .post-link-prev:hover,
@@ -1898,6 +1900,7 @@ h6 {
 .post-link-prev:before {
   content: "☜";
   margin-right: 4px;
+  display: none;
 }
 .post-link-next {
   margin-left: 26%;
@@ -1906,6 +1909,7 @@ h6 {
 .post-link-next:after {
   content: "☞";
   margin-left: 4px;
+  display: none;
 }
 @media (max-width: 800px) {
   .post-link-next {

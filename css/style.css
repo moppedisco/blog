@@ -1315,42 +1315,39 @@ Created:    2012-04-11
 *:before {
   -webkit-font-smoothing: antialiased;
 }
-html,
-body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
 .logo {
   position: fixed;
   top: 30px;
-  left: 24px;
-  z-index: 1;
+  left: 25px;
+  z-index: 3;
+  color: #000;
   text-transform: uppercase;
   font-weight: bold;
   transform: rotate(-90deg) translateX(-100%);
+  -webkit-transform: rotate(-90deg) translateX(-100%);
   transform-origin: 0 0;
+  font-size: 14px;
 }
-.wrapper {
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
+@media (max-width: 800px) {
+  .logo {
+    top: -55px;
+    left: -42px;
+  }
 }
 .page-section--home {
   position: relative;
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: url("/images/loading_image2.gif") no-repeat 50%;
+  background: url("/images/bg_teaser.jpg") no-repeat 50%;
   background-size: cover;
   border: 30px solid #fff;
   line-height: 100%;
   overflow: hidden;
 }
 .page-section--home h1 {
-  font-size: 10vh;
+  font-size: 14vw;
   position: relative;
-  transform: translateY(-50%);
   top: 50%;
   left: 0;
   text-align: center;
@@ -1358,20 +1355,42 @@ body {
   margin: 0;
   text-transform: uppercase;
 }
+.page-section--home h1 div {
+  color: transparent;
+}
+@media (max-width: 800px) {
+  
+}
 .page-section--home h2 {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 50%;
   transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
   font-size: 33px;
   margin: 0;
-  color: #000;
+  color: #fff;
   text-align: center;
+  font-family: "garamond-premier-pro-caption";
+  font-weight: 400;
 }
-span.typer {
+@media (max-width: 800px) {
+  .page-section--home h2 {
+    width: 90%;
+    font-size: 22px;
+  }
+}
+.typer {
   color: #1560fb;
   font-weight: bold;
+  text-transform: none;
+}
+.capit {
+  text-transform: uppercase;
+  font-family: "garamond-premier-pro-caption";
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .columns {
   -moz-column-count: 2;
@@ -1383,13 +1402,25 @@ span.typer {
   max-width: 1024px;
   margin: 130px auto 180px;
 }
+@media (max-width: 800px) {
+  .columns {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+    padding: 0 30px;
+  }
+}
 .columns *:first-child:first-letter {
   float: left;
   font-size: 95px;
   line-height: 84px;
   padding-right: 15px;
   vertical-align: text-top;
-  font-family: Georgia;
+  font-family: "garamond-premier-pro-caption";
+  font-weight: 400;
 }
 .work-grid {
   -moz-column-count: 3;
@@ -1402,6 +1433,17 @@ span.typer {
   max-width: 1024px;
   margin: 0 auto;
 }
+@media (max-width: 800px) {
+  .work-grid {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1;
+    -webkit-column-gap: 0px;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+    padding: 0 30px;
+  }
+}
 .content-box {
   color: #000;
   margin: 0 0 60px;
@@ -1412,6 +1454,12 @@ span.typer {
 .content-box:hover {
   text-decoration: none;
 }
+@media (max-width: 800px) {
+  .content-box {
+    margin-left: -20px;
+    padding-left: 20px;
+  }
+}
 .content-box__title {
   margin: 0;
   text-transform: uppercase;
@@ -1420,20 +1468,26 @@ span.typer {
   font-size: 14px;
 }
 .content-box__more img {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto 30px;
   display: block;
 }
 .content-box__desc {
   transition: opacity 0.3s;
 }
+.content-box__desc b {
+  font-size: 14px;
+}
 p.content-box__intro {
-  transform: rotate(-90deg) translateX(-100%);
-  transform-origin: 0 0;
   position: absolute;
-  top: 7px;
+  top: -4px;
   left: 0;
   font-size: 14px;
-  text-align: left;
-  border-bottom: 2px solid #000;
+  text-align: right;
+  font-weight: bold;
+}
+@media (max-width: 800px) {
+  p.content-box__intro {
+    font-size: 11px;
+  }
 }

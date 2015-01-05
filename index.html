@@ -3,8 +3,14 @@ layout: default
 title: UX engineer
 name: page-home
 ---
+<div class="logo">
+	<span class="first">Yacine</span>
+	<span class="last">Belarbi</span>
+</div><!-- /.logo -->
 <section class="page-section page-section--home">
-	<article class="row home-section__row">
+	<h1><div>Web</div> <div>developer</div> <div style='text-transform: none;'>or</div><div>Interaction</div><div>designer</div></h1>
+	<h2>When i'm with developers, I feel like a designer. When i'm with designers, I feel like a developer.</h2>
+<!-- 	<article class="row home-section__row">
 		<header class="home-section__leftcol">
 			<h1 class='home-section__intro'>
 				Hi, I'm Yacine —<br> A digital hipster based in Zürich <br> with expertise in <span data-typer-targets="frontend development,interaction design,wireframing,coming late to work,not getting stressed">frontend development</span>
@@ -27,9 +33,33 @@ name: page-home
 				<h3 class="content-box__title"><u>Work</u></h3>
 				<div class="content-box__desc">
 					<p>Here you'll find the nice bits. The part where I shut up and just show you the fruits of my labour.</p>
-					<!-- <p>Let's be honest, nobody likes writing about them myself. I'm no exception. It seems boastful or overly assertive but I think I'm way better in the flesh with a coffee in my hand chatting about semantic web and test driven development. But I get it, you need to get some overall impression but I'd rather start by showing off my work and if you wanna know more about me after that then i'll have something ready for you.</p> -->
 				</div>
 			</div>
 		</a>
-	</article>
+	</article> -->
+</section>
+<section class="columns">
+	<p>Hi, I'm Yacine —<br> A digital hipster based in Zürich <br> with expertise in <span class="typer" data-typer-targets="frontend development,interaction design,wireframing,coming late to work,not getting stressed">frontend development</p>
+	<p>Let's be honest, nobody likes writing about them myself. I'm no exception. It seems boastful or overly assertive but I think I'm way better in the flesh with a coffee in my hand chatting about semantic web and test driven development. But I get it, you need to get some overall impression but I'd rather start by showing off my work and if you wanna know more about me after that then i'll have something ready for you.</p>	
+</section>
+<section>
+	<div class="work-grid">
+
+		{% for post in site.posts %}
+			<a class="content-box {{post.postClass}}" title="{{ post.title }}" href="{{ post.url }}">
+				<h3 class="content-box__title"><u>{{post.title}}</u></h3>
+				<p>— {{post.subtitle}}</p>
+				<p class="content-box__intro">{{post.category}}</p>
+				<div class="content-box__more">
+					<img src="{{post.thumbnail}}" style="" alt="" />
+					<div class="content-box__desc"  title="{{post.title}}">
+						<p>{{post.description}}</p>
+						{% for tag in post.tags %}
+							<b>{{tag}}</b>
+						{% endfor %}
+					</div>
+				</div>
+			</a>	
+		{% endfor %}		
+	</div>	
 </section>

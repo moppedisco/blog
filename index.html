@@ -3,44 +3,21 @@ layout: default
 title: UX engineer
 name: page-home
 ---
-<a class="logo">
-	<span class="first">Yacine</span>
-	<span class="last">Belarbi</span>
-</a><!-- /.logo -->
 <section class="page-section page-section--home">
 	<h1>
 		<div>
-			&nbsp;<span class="typer typer1" data-typer-targets="Frontend, Interaction, Web, Scrum">Yacine</span>&nbsp;
+			&nbsp;<span class="typer" data-typer-targets="Frontend, Interaction, Web, Scrum">Yacine</span>&nbsp;
 		</div>
 		<!-- <div style="color: #000;">—</div> -->
 		<div>
-			&nbsp;<span class="typer typer2" data-typer-targets="developer, designer, master">Belarbi</span>&nbsp;
+			&nbsp;<span class="typer" data-typer-targets="developer, designer, master">Belarbi</span>&nbsp;
 		</div>
 	</h1>
 	<h2>When I'm with developers, I feel like a designer. When i'm with designers, I feel like a developer.</h2>
 </section>
-<section class="columns">
-	<p>Hi there, My name is <span class="capit">Yacine Belarbi</span> —<br> I'm a digital hipster based in <span class="capit">Zürich</span> <br> with expertise in <span class="typer" data-typer-targets="frontend development,interaction design,wireframing,coming late to work,not getting stressed">frontend development</span></p>
-	<p>Ok stop. Let's be honest, nobody likes writing about them myself. I'm no exception. It seems boastful or overly assertive but I think I'm way better in the flesh with a coffee in my hand chatting about semantic web 3.0 and test driven development. But I get it, you need to get some overall impression but I'd rather start by showing off my work and if you wanna know more about me after that then i'll have something ready for you.</p>	
-</section>
-<section>
-	<div class="work-grid">
-
-		{% for post in site.posts %}
-			<a class="content-box {{post.postClass}}" title="{{ post.title }}" href="{{ post.url }}">
-				<p class="content-box__intro">{{ post.date | date: "%y<br>%d" }}</p>
-				<div class="content-box__more">
-					<img src="{{post.thumbnail}}" style="" alt="" />
-					<h3 class="content-box__title"><u>{{post.title}}</u></h3>
-					<p>— {{post.subtitle}}</p>					
-					<div class="content-box__desc"  title="{{post.title}}">
-						<p>{{post.description}}</p>
-						{% for tag in post.tags %}
-							<b>{{tag}}</b>
-						{% endfor %}
-					</div>
-				</div>
-			</a>	
-		{% endfor %}		
-	</div>	
+<section class="page-section page-section--shortbio">
+	<div class="shortbio-grid">
+		<p>Hi there, I'm <span class="capit">Yacine</span> —<br>A digital hipster based in <span class="capit">Zürich</span> <br> with expertise in <span class="typer" data-typer-targets="frontend development,interaction design,wireframing,coming late to work,not getting stressed">frontend development</span></p>
+		<p>Ok stop. Let's be honest, nobody likes writing about them myself. I'm no exception. It seems boastful or overly assertive but I think I'm way better in the flesh with a coffee in my hand chatting about <span class="capit">semantic web 3.0</span> and <span class="capit">test driven development</span>. But I get it, you need to get some overall impression but I'd rather start by showing off my work and if you wanna know more about me after that then i'll have something ready for you.</p>	
+	</div><!-- /.columns -->
 </section>

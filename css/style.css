@@ -1315,6 +1315,57 @@ Created:    2012-04-11
 *:before {
   -webkit-font-smoothing: antialiased;
 }
+.typer {
+  color: #1560fb;
+  font-weight: bold;
+  text-transform: none;
+}
+.capit {
+  text-transform: uppercase;
+  font-family: "garamond-premier-pro-caption";
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.site-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  text-align: right;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  z-index: 10;
+  transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  transform: rotate(90deg) translateY(35px);
+  -webkit-transform: rotate(90deg) translateY(35px);
+}
+.site-nav .site-nav__link {
+  color: #1560fb;
+  font-weight: bold;
+  border: none;
+  padding: 10px 0 5px;
+  margin: 0 10px;
+  position: relative;
+}
+.site-nav .site-nav__link:hover {
+  border-bottom: 2px solid #1560fb;
+}
+#topcorner,
+#bottomcorner {
+  display: block;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+}
+#bottomcorner {
+  bottom: 20px;
+  top: auto;
+}
 .logo {
   position: fixed;
   top: 30px;
@@ -1334,32 +1385,38 @@ Created:    2012-04-11
     left: -42px;
   }
 }
+.page-section {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+@media (max-width: 1024px) {
+  .page-section {
+    padding: 0 30px;
+  }
+}
+.page-section--work {
+  padding-top: 40px;
+}
 .page-section--home {
   position: relative;
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: url("/images/bg_teaser.jpg") no-repeat 50%;
-  background-size: cover;
-  border: 30px solid #fff;
+  background: url(/images/canons.jpg) no-repeat 50% 0;
+  background-size: contain;
   line-height: 100%;
   overflow: hidden;
+  max-width: none;
 }
 .page-section--home h1 {
-  font-size: 14vw;
+  font-size: 18vw;
   position: relative;
   top: 50%;
   left: 0;
   text-align: center;
-  color: #fff;
+  color: #000;
   margin: 0;
   text-transform: uppercase;
-}
-.page-section--home h1 div {
-  color: transparent;
-}
-@media (max-width: 800px) {
-  
 }
 .page-section--home h2 {
   position: absolute;
@@ -1368,55 +1425,39 @@ Created:    2012-04-11
   width: 50%;
   transform: translateY(-50%) translateX(-50%);
   -webkit-transform: translateY(-50%) translateX(-50%);
-  font-size: 33px;
+  font-size: 23px;
   margin: 0;
-  color: #fff;
+  color: #000;
   text-align: center;
-  font-family: "garamond-premier-pro-caption";
-  font-weight: 400;
 }
 @media (max-width: 800px) {
   .page-section--home h2 {
-    width: 90%;
     font-size: 22px;
   }
 }
-.typer {
-  color: #1560fb;
-  font-weight: bold;
-  text-transform: none;
-}
-.capit {
-  text-transform: uppercase;
-  font-family: "garamond-premier-pro-caption";
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-.columns {
+.shortbio-grid {
   -moz-column-count: 2;
   -webkit-column-count: 2;
   column-count: 2;
   -webkit-column-gap: 50px;
   -moz-column-gap: 50px;
   column-gap: 50px;
-  max-width: 1024px;
-  margin: 130px auto 180px;
+  padding: 70px 0 80px;
 }
 @media (max-width: 800px) {
-  .columns {
+  .shortbio-grid {
     -moz-column-count: 1;
     -webkit-column-count: 1;
     column-count: 1;
     -webkit-column-gap: 0px;
     -moz-column-gap: 0px;
     column-gap: 0px;
-    padding: 0 30px;
   }
 }
-.columns *:first-child:first-letter {
+.shortbio-grid *:first-child:first-letter {
   float: left;
-  font-size: 95px;
-  line-height: 84px;
+  font-size: 114px;
+  line-height: 95px;
   padding-right: 15px;
   vertical-align: text-top;
   font-family: "garamond-premier-pro-caption";
@@ -1429,9 +1470,6 @@ Created:    2012-04-11
   -webkit-column-gap: 50px;
   -moz-column-gap: 50px;
   column-gap: 50px;
-  margin: 0 30px;
-  max-width: 1024px;
-  margin: 0 auto;
 }
 @media (max-width: 800px) {
   .work-grid {
@@ -1490,4 +1528,24 @@ p.content-box__intro {
   p.content-box__intro {
     font-size: 11px;
   }
+}
+.website-iframe {
+  position: absolute;
+  z-index: 9999;
+  top: 20px;
+  left: 20px;
+  pointer-events: auto;
+  transform: matrix3d(0.792978043912176, -0.001187624750499, 0, -0.000001996007984031, -0.0198463211306682, 0.805175133309467, 0, -0.000024364702248863, 0, 0, 1, 0, 218, 95, 0, 1);
+  transform-origin: 0px 0px 0px;
+  border: none;
+}
+.touch .website-iframe {
+  display: none;
+}
+.full-bleed-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
 }

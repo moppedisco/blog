@@ -1324,6 +1324,9 @@ a:hover {
   font-weight: bold;
   text-transform: none;
 }
+.text-group {
+  display: inline-block;
+}
 .capit {
   text-transform: uppercase;
   font-family: "garamond-premier-pro-caption";
@@ -1333,7 +1336,7 @@ a:hover {
 .firstLetter:first-letter {
   float: left;
   font-size: 98px;
-  line-height: 85px;
+  line-height: 84px;
   padding-right: 15px;
   vertical-align: text-top;
   font-family: "garamond-premier-pro-caption";
@@ -1406,11 +1409,15 @@ a:hover {
   position: fixed;
   top: 13px;
   left: 43px;
+  z-index: 3;
   letter-spacing: 2px;
 }
 .page-section {
   margin: 130px auto 0;
   max-width: 1024px;
+}
+.page-work-single .page-section {
+  margin-top: 70px;
 }
 @media (max-width: 1024px) {
   .page-section {
@@ -1432,6 +1439,9 @@ a:hover {
     width: 100%;
     padding: 30px;
   }
+}
+.meta {
+  font-weight: normal;
 }
 .page-section--home {
   position: relative;
@@ -1488,7 +1498,7 @@ a:hover {
 .columns-two:first-letter {
   float: left;
   font-size: 98px;
-  line-height: 85px;
+  line-height: 84px;
   padding-right: 15px;
   vertical-align: text-top;
   font-family: "garamond-premier-pro-caption";
@@ -1628,4 +1638,27 @@ p.content-box__intro {
   src: url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.eot?#iefix') format('embedded-opentype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.woff') format('woff'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.ttf') format('truetype'), url('/css/EF-CSS-FRAMEWORK/extensions/design/fonts/entypo-social.svg#entypo-social') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+.post-date {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.post-footer {
+  max-width: 1024px;
+  margin: 0 auto 25px;
+  overflow: hidden;
+}
+.post-link-prev,
+.post-link-next {
+  z-index: 1;
+  border-bottom: none;
+  width: 50%;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+}
+.post-link-next {
+  text-align: right;
+  float: right;
 }

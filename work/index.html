@@ -5,7 +5,9 @@ name: page-work
 ---
 
 <section class="page-section page-section--work">
-	<h1>Work</h1>
+	<header class="page-section__intro">
+		<p>This is the nice bit. <br />The part where I shut up and just show you the fruits of my labour.</p>
+	</header>
 	<div class="work-grid">
 		{% for post in site.posts %}
 			<a class="content-box {{post.postClass}}" title="{{ post.title }}" href="{{ post.url }}">

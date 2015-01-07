@@ -1358,6 +1358,13 @@ a:hover {
   transform: rotate(90deg) translateY(35px);
   -webkit-transform: rotate(90deg) translateY(35px);
 }
+@media (max-width: 800px) {
+  .site-nav {
+    transform: rotate(90deg) translateY(25px);
+    -webkit-transform: rotate(90deg) translateY(25px);
+    bottom: 10px;
+  }
+}
 .site-nav .site-nav__link {
   color: #1560fb;
   font-weight: bold;
@@ -1370,16 +1377,25 @@ a:hover {
 .site-nav .site-nav__link:hover {
   border-bottom: 2px solid #1560fb;
 }
-#topcorner,
-#bottomcorner {
+.divider {
   display: block;
   position: fixed;
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
   top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  text-align: center;
   z-index: 5;
 }
-#bottomcorner {
+@media (max-width: 800px) {
+  .divider {
+    position: static;
+    width: 100%;
+    text-align: center;
+  }
+}
+.divider--bottom {
   bottom: 20px;
   top: auto;
 }
@@ -1399,8 +1415,8 @@ a:hover {
 }
 @media (max-width: 800px) {
   .logo {
-    top: -55px;
-    left: -42px;
+    top: -70px;
+    left: -55px;
   }
 }
 .page-title {
@@ -1412,6 +1428,15 @@ a:hover {
   z-index: 3;
   letter-spacing: 2px;
 }
+@media (max-width: 800px) {
+  .page-title {
+    position: static;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
 .page-section {
   margin: 130px auto 0;
   max-width: 1024px;
@@ -1422,6 +1447,7 @@ a:hover {
 @media (max-width: 1024px) {
   .page-section {
     padding: 0 30px;
+    margin-top: 30px;
   }
 }
 .page-section__intro {
@@ -1437,7 +1463,7 @@ a:hover {
 @media (max-width: 1024px) {
   .page-section__intro {
     width: 100%;
-    padding: 30px;
+    padding: 0;
   }
 }
 .meta {
@@ -1447,7 +1473,6 @@ a:hover {
   position: relative;
   z-index: 2;
   width: 100%;
-  height: 100%;
   background: url(/images/canons.jpg) no-repeat 50% 0;
   background-size: contain;
   line-height: 100%;
@@ -1459,11 +1484,24 @@ a:hover {
   font-size: 18vw;
   position: relative;
   top: 50%;
-  left: 0;
+  left: 50%;
   text-align: center;
   color: #000;
   margin: 0;
   text-transform: uppercase;
+  -webkit-transform: translateX(-50%);
+  width: 200%;
+}
+@media (max-width: 800px) {
+  .page-section--home h1 {
+    padding: 30px 0;
+  }
+  .page-section--home h1 .first-row {
+    margin: -30px auto 60px;
+  }
+  .page-section--home h1 .second-row {
+    margin: 60px auto -30px;
+  }
 }
 .page-section--home h2 {
   position: absolute;
@@ -1479,7 +1517,9 @@ a:hover {
 }
 @media (max-width: 800px) {
   .page-section--home h2 {
-    font-size: 22px;
+    font-size: 18px;
+    width: 100%;
+    padding: 0 30px;
   }
 }
 .page-section--shortbio {
@@ -1530,7 +1570,6 @@ a:hover {
     -webkit-column-gap: 0px;
     -moz-column-gap: 0px;
     column-gap: 0px;
-    padding: 0 30px;
   }
 }
 .content-box {

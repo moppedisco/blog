@@ -1509,8 +1509,12 @@ a:hover {
   color: #000;
   margin: 0;
   text-transform: uppercase;
+  transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   width: 200%;
+}
+.page-section--home h1 .typer span {
+  color: #fff !important;
 }
 @media (max-width: 800px) {
   .page-section--home h1 {
@@ -1605,7 +1609,9 @@ a:hover {
   display: inline-block;
   position: relative;
   padding-left: 35px;
+  width: 100%;
   transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   transition: all 0.3s;
   border-left: 0px solid #fff;
 }

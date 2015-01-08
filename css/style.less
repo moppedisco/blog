@@ -35,7 +35,7 @@ a:hover {
 .firstLetter {
 	&:first-letter {
 		float: left;
-		font-size: 98px;
+		.font-size(98);
 		line-height: 84px;
 		padding-right: 15px;
 		vertical-align: text-top;	
@@ -49,7 +49,7 @@ a:hover {
 	bottom: 20px;
 	right: 0;
 	text-align: right;
-	font-size: 13px;
+	.font-size(13);
 	line-height: 100%;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -90,12 +90,16 @@ a:hover {
 	top: 30px;
 	left: 0;
 	text-align: center;
-	z-index: 5;
+	z-index: -1;
 	@media (max-width: 800px) {
 		position: static;
 		width: 100%;
 		text-align: center;
 	}	
+
+	.page-work-single & {
+		display: none;
+	}
 }
 
 .divider--bottom {
@@ -114,7 +118,7 @@ a:hover {
 	transform: rotate(-90deg) translateX(-100%);
 	-webkit-transform: rotate(-90deg) translateX(-100%);
 	transform-origin: 0 0;	
-	font-size: 14px;
+	.font-size(14);
 	letter-spacing: 2px;
 
 	@media (max-width: 800px) {
@@ -125,7 +129,7 @@ a:hover {
 
 .page-title {
 	text-transform: uppercase;
-	font-size: 13px;
+	.font-size(13);
 	position: fixed;
 	top: 13px;
 	left: 43px;
@@ -137,7 +141,11 @@ a:hover {
 		display: block;
 		margin-top: 10px;
 		text-align: center;
-	}		
+		.page-work-single & {
+			display: none;
+		}		
+	}
+
 }
 
 .page-section {
@@ -156,7 +164,8 @@ a:hover {
 
 .page-section__intro {
 	.vertical-rhytm(3);
-	font-size: 23px;
+	.font-size(23);
+	line-height: 140%;
 	font-weight: bold;
 	margin-left: auto;
 	margin-right: auto;
@@ -170,6 +179,9 @@ a:hover {
 
 .meta {
 	font-weight: normal;
+	span {
+		text-transform: capitalize;
+	}
 }
 
 .page-section--home {
@@ -210,12 +222,13 @@ a:hover {
 	width: 50%;
 	transform: translateY(-50%) translateX(-50%);
 	-webkit-transform: translateY(-50%) translateX(-50%);
-	font-size: 23px;
+	.font-size(23);
+	line-height: 140%;
 	margin: 0;
 	color: #000;
 	text-align: center;
 	@media (max-width: 800px) {
-		font-size: 18px;
+		.font-size(18);
 		width: 100%;
 		padding: 0 30px;
 	}		
@@ -271,8 +284,24 @@ a:hover {
 	padding-left: 35px;
 	transform: translate3d(0,0,0);
 
-	&:hover {
-		text-decoration: none;
+	transition: all 0.3s;
+	border-left: 0px solid #fff;
+
+	&:after {
+		content: "★";
+		position: absolute;
+		top: 40px;
+		left: -3px;
+		.font-size(20);
+		color: orange;
+	}
+
+	&:hover * {
+		text-decoration: underline;
+	}
+
+	&.content-box--small:after {
+		display: none;
 	}
 
 	@media (max-width: 800px) {
@@ -283,51 +312,73 @@ a:hover {
 
 .content-box__title {
 	margin: 0;
-	text-transform: uppercase;	
+	text-transform: uppercase;
 }
 
-.content-box__title + p {
-	font-size: 14px;
+.content-box__subtitle,
+.content-box__tags {
+	.font-size(14,true);
+	text-transform: capitalize;
 }
 
-.content-box__more img {
+.content-box__img {
 	max-width: 100%;
 	margin: 0 auto 30px;
 	display: block;
-}
 
+	transition: opacity 0.2s;
 
-.content-box__desc {
-	// transition: opacity 0.1s;
-	opacity: 0.2;
+	.content-box--small & {
+		opacity: 0.2;
+		@media (max-width: 800px) {
+			opacity: 1;
+		}		
+	}
 
 	.content-box:hover & {
 		opacity: 1;
 	}
-
-	b {
-		font-size: 14px;
-	}
 }
 
-p.content-box__intro {
 
+.content-box__date {
 	position: absolute;
 	top: -4px;
 	left: 0;
-	font-size: 14px;
-	text-align: right;
+	.font-size(14);
+	line-height: 130%;
+	text-align: center;
 	font-weight: bold;
 	@media (max-width: 800px) {
-		font-size: 11px;
+		.font-size(11);
 	}
 }
 
-.website-iframe {
+.post-header {
+	width: 100%;
+	height: 0px;
+	padding-bottom: 63.67%;
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0;	
+}
+
+.post-header__inner {
 	position: absolute;
-	z-index: 9999;
+	top: 0;
+	-webkit-transform-origin: 0 0;
+	transform-origin: 0 0;	
+}
+
+.post-header__iframe {
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+	width: 1003px;
+	height: 612px;
 	top: 20px;
-	left: 20px;
+	left: 21px;	
 	pointer-events: auto;
 	transform: matrix3d(0.792978043912176, -0.001187624750499, 0, -0.000001996007984031, -0.0198463211306682, 0.805175133309467, 0, -0.000024364702248863, 0, 0, 1, 0, 218, 95, 0, 1);
 	transform-origin: 0px 0px 0px;
@@ -337,12 +388,9 @@ p.content-box__intro {
 	}
 }
 
-.full-bleed-img {
-	width: 100%;
-	max-width: 100%;
-	height: auto;
-	position: relative;
-	z-index: 2;
+.post-header__img {
+	width: 1280px;
+	display: block;
 }
 
 .contact-links {
@@ -411,7 +459,7 @@ p.content-box__intro {
 	width: 50%;
 	float: left;
 	text-align: left;
-	font-size: 16px;
+	.font-size(16);
 }
 
 .post-link-next {

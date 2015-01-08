@@ -3,7 +3,6 @@ layout: 		post
 title:  		Rainbow your Mac dock apps for quick UX win
 subtitle: 		
 thumbnail: 		/images/thumbnail_rainbow-post.jpg
-link:			
 cover:			/images/cover-varskaviata.jpg
 date:   		2014-03-11
 category: 		Blog post

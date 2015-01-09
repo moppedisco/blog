@@ -1483,6 +1483,63 @@ a:hover {
     padding: 0;
   }
 }
+.link--down {
+  margin-bottom: 84px;
+  margin-bottom: 4.666666666666667rem;
+  text-align: center;
+}
+.link--work {
+  font-size: 14px;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.link--work:after {
+  content: "↓";
+  display: inline-block;
+  line-height: 1;
+  position: relative;
+  vertical-align: middle;
+  zoom: 1;
+  /**
+     * So using `.icon` on certain elements doesn’t make a visual difference.
+     */
+
+  font-style: normal;
+  font-weight: normal;
+  /**
+     * So icons added using `.icon` sit in the centre of the element.
+     */
+
+  text-align: center;
+  font-size: 16px;
+  /**
+     * Place the icon in a box the exact same dimensions as the icon itself.
+     */
+
+  width: 1em;
+  height: 1em;
+  font-family: 'entypo';
+  font-size: 45px;
+  font-size: 2.6470588235294117rem;
+  line-height: 45px;
+  font-size: 36px;
+  font-size: 2rem;
+  line-height: 36px;
+  line-height: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+}
+.link--work:after:before {
+  content: attr(data-icon);
+}
+.link--work:hover:after {
+  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+}
 .meta {
   font-weight: normal;
 }
@@ -1625,8 +1682,8 @@ a:hover {
   line-height: 20px;
   color: orange;
 }
-.content-box:hover * {
-  text-decoration: underline;
+.content-box:hover {
+  opacity: 1;
 }
 .content-box.content-box--small:after {
   display: none;
@@ -1654,13 +1711,8 @@ a:hover {
   display: block;
   transition: opacity 0.2s;
 }
-.content-box--small .content-box__img {
-  opacity: 0.2;
-}
 @media (max-width: 800px) {
-  .content-box--small .content-box__img {
-    opacity: 1;
-  }
+  
 }
 .content-box:hover .content-box__img {
   opacity: 1;

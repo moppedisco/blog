@@ -46,18 +46,18 @@ name: page-work-single
 	<!-- This is the prev link, newer posts -->
 	{% if page.next %}
 		{% if page.next.subtitle %}
-			<div class="post-link-prev"><a href="{{ page.next.url }}">❮ {{ page.next.subtitle }}</a></div>
+			<div class="post-link-prev"><a href="{{ page.next.url }}">← {{ page.next.subtitle }}</a></div>
 		{% else %}
-			<div class="post-link-prev"><a href="{{ page.next.url }}">❮ {{ page.next.title }}</a></div>
+			<div class="post-link-prev"><a href="{{ page.next.url }}">← {{ page.next.title }}</a></div>
 		{% endif%}
 	{% endif%}
 
 	<!-- This is the next link, older posts -->
 	{% if page.previous %}
 		{% if page.previous.subtitle %}
-			<div class="post-link-next"><a  href="{{ page.previous.url }}">{{ page.previous.subtitle }} ❯</a></div>
+			<div class="post-link-next"><a  href="{{ page.previous.url }}">{{ page.previous.subtitle }} →</a></div>
 		{% else %}
-			<div class="post-link-next"><a  href="{{ page.previous.url }}">{{ page.previous.title }} ❯</a></div>
+			<div class="post-link-next"><a  href="{{ page.previous.url }}">{{ page.previous.title }} →</a></div>
 		{% endif%}
 	{% endif%}
 	</footer>

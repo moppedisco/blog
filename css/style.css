@@ -1558,7 +1558,7 @@ a:hover {
   margin-top: 0;
 }
 .page-section--home h1 {
-  font-size: 18vw;
+  font-size: 14vw;
   position: relative;
   top: 50%;
   left: 50%;
@@ -1827,6 +1827,10 @@ a:hover {
   font-size: 16px;
   font-size: 0.8888888888888888rem;
   line-height: 16px;
+}
+.post-link-prev a,
+.post-link-next a {
+  color: #1560fb;
 }
 .post-link-next {
   text-align: right;

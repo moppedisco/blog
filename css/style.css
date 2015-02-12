@@ -1667,9 +1667,6 @@ a:hover {
   position: relative;
   padding-left: 35px;
   width: 100%;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  transition: all 0.3s;
   border-left: 0px solid #fff;
 }
 .content-box:after {
@@ -1684,6 +1681,11 @@ a:hover {
 }
 .content-box:hover {
   opacity: 1;
+}
+.content-box:hover span,
+.content-box:hover b {
+  background: #1560fb;
+  color: #fff;
 }
 .content-box.content-box--small:after {
   display: none;

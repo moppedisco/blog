@@ -13,9 +13,9 @@ name: page-work
 			<a class="content-box {{post.postClass}}" title="{{ post.title }}" href="{{ post.url }}">
 				<time class="content-box__date">{{ post.date | date: "%y<br>%d" }}</time>
 				<img class="content-box__img" src="{{post.thumbnail}}" alt="{{post.title}}" />
-				<h3 class="content-box__title"><u>{{post.title}}</u></h3>
-				<p class="content-box__subtitle">— {{post.subtitle}}</p>					
-				<p class="content-box__desc">{{post.description}}</p>
+				<h3 class="content-box__title"><u><span>{{post.title}}</span></u></h3>
+				<p class="content-box__subtitle"><span>— {{post.subtitle}}</span></p>					
+				<p class="content-box__desc"><span>{{post.description}}</span></p>
 				<div class="content-box__tags">
 					{% for tag in post.tags %}
 						<b>{{tag}}</b>, 

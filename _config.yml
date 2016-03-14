@@ -1,4 +1,5 @@
 name: Yacine Belarbi
 markdown: redcarpet
-pygments: true
-permalink: /work/:title
+highlighter: rouge
+permalink: /work/:title/
+relative_permalinks: false

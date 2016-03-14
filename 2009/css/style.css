@@ -1,0 +1,393 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 22:15:09 aug 22, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:24:34 mar 13, 2016.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ---------- Main Content Styles ---------- */
+
+html { overflow: hidden; }
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #000;
+	color: #fff;
+	font: 12px/150% Verdana, Arial, Helvetica, sans-serif;
+}
+
+a:link, a:visited, a:active
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover { text-decoration: underline; }
+
+#wrap {
+	z-index: 10;
+	position: relative;
+	padding: 0 50px;
+}
+
+#start, #webb, #foto, #kontakt {
+	position: relative;
+	width: 100%;
+	height: 1050px;
+	margin-bottom: 50px;
+	padding: 50px 0;
+}
+
+.knapp {
+	width: 210px;
+	height: 58px;
+	background: #000 url(../bilder/jagkan.gif) no-repeat 5px 5px;
+	display: block;
+	font: 52px Arial, Helvetica, sans-serif;
+	text-align: right;
+	vertical-align:top;
+	padding-right: 5px;
+	margin-top: 19px;
+	float: left;
+	clear: left;
+}
+
+a:hover.knapp { text-decoration: none; }
+
+#fotoknapp {
+	background: #000  url(../bilder/jagkanocksa.gif) no-repeat 5px 5px;
+	width: 355px;
+	margin-top: 19px;
+}
+
+#startknapp {
+	background: #000 url(../bilder/tillbaka.gif) no-repeat 5px 5px;
+	width: 245px;
+	margin-top: 10px;
+}
+
+#kontaktknapp {
+	background: #000 url(../bilder/horgarnaavdig.gif) no-repeat 5px 5px;
+	width: 380px;
+	margin-top: 10px;
+}
+
+span.arrow {
+	background: url(../bilder/arrowdown_anim.gif) no-repeat 0 10px;
+	padding: 0 10px;
+}
+
+#startknapp span.arrow { background: url(../bilder/arrowup_anim.gif) no-repeat 0 10px; }
+
+.jagkan a:hover, .jagkanocksa a:hover {	text-decoration: none; }
+
+/* ---------- Header styles---------- */
+
+
+#logo h1 {
+	width: 860px;
+	height: 69px;
+	margin-bottom: 31px;
+	background: #000 url(../bilder/jagheteryacinebelarbi.gif) no-repeat 10px 10px;
+	text-indent: -9999px;
+	padding: 10px;
+}
+
+h2 {
+	width: 213px;
+	height: 74px;
+	margin-bottom: 26px;
+	text-indent: -9999px;
+}
+
+#webb h2 { background: url(../bilder/webb.gif) no-repeat; }
+
+#foto h2 { background: url(../bilder/foto.gif) no-repeat; }
+
+#kontakt h2 {
+	background: url(../bilder/kontakt.gif) no-repeat;
+	width: 320px;
+}
+
+/* ---------- Start ---------- */
+
+ul#aboutme {
+	float: left;
+	width: 100%;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+ul#aboutme li {
+	float: left;
+	width: 100%;
+	margin-bottom: 12px;
+}
+
+ul#aboutme li ul#twitter_update_list li span {
+	color: #2FC2EF;
+	background: #000 url(../bilder/twitterbird.jpg) no-repeat 0 10px;
+	padding-left: 45px;
+}
+
+	ul#aboutme li ul#twitter_update_list li span a { margin: 0 5px; float: none; }
+
+ul#aboutme li ul#twitter_update_list li a {
+	float: left;
+	margin: 8px 0 0 10px;
+}
+
+ul#aboutme li span {
+	padding: 10px;
+	background: #000;
+	float: left;
+}
+
+ul#aboutme li a {
+	background: deepPink;
+	padding: 2px 5px;
+}
+
+/* ---------- Webb ---------- */
+
+ul#webbpages {
+	width: 1400px;
+	float: left;
+	margin-bottom: 26px;
+
+}
+
+ul#webbpages li {
+	float: left;
+	width: 640px;
+	margin: 0 20px 0 0;
+	height: auto;
+	padding: 0px;
+}
+
+#slider, #slider li
+{
+	/*
+		define width and height of container element and list item (slide)
+		list items must be the same size as the slider area
+	*/
+	width: 600px;
+	height: 438px;
+	overflow: hidden;
+	padding: 0px;
+}
+
+#slider li div {
+	float: left;
+	background: #000;
+	padding: 5px 0px;
+	font-size: 10px;
+	line-height: 16px;
+	margin-top: -4px;
+	height: 58px;
+}
+
+#slider li div.text p {	padding-bottom: 5px; }
+
+#slider li div.text p span, #slider li div.link a
+{
+	background: #ff1493;
+	color: #fff;
+	padding: 2px 5px;
+	margin-right: 5px;
+}
+
+#slider li div.text { width: 320px; }
+
+#slider li div.link {
+	width: 280px;;
+	text-align: right;
+}
+
+#slider li div.link a {
+	font-weight: bold;
+}
+
+span#prevBtn a {
+	position: absolute;
+	left: -17px;
+	top: 333px;
+	background: url(../bilder/prev.gif) no-repeat;
+	text-indent: -9999px;
+	width: 35px;
+	height: 35px;
+}
+
+span#prevBtn a:hover {
+	background: url(../bilder/prev_over.gif) no-repeat;
+}
+
+span#nextBtn a {
+	position: absolute;
+	left: 583px;
+	top: 330px;
+	background: url(../bilder/next.gif) no-repeat;
+	text-indent: -9999px;
+	width: 35px;
+	height: 35px;
+}
+
+span#nextBtn a:hover { background: url(../bilder/next_over.gif) no-repeat; }
+
+/* ---------- Foto ---------- */
+
+#gallery_wrap, #gallery_wrap .jagkan {
+	width: 500px;
+	float: left;
+}
+
+.gallery li {
+	float: left;
+	padding: 5px;
+	margin: 0px 10px 10px 0;
+	display: block;
+	line-height: 0px;
+	background: #000;
+	height: auto;
+	width: auto;
+}
+
+.gallery li:hover {	cursor: pointer; }
+
+#main_image {
+	width: 900px;
+	height: 600px;
+	text-align: left;
+	float: left;
+	overflow: hidden;
+}
+
+/* ---------- Formul? ---------- */
+
+#commentform {
+	float: left;
+	width: 400px;
+}
+
+#commentform p {
+	margin: 0 0 10px;
+	padding: 10px;
+	background: #000;
+	float: left;
+}
+
+#commentform label {
+	float: left;
+	width: 100%;
+	background: #000;
+	padding-bottom: 5px;
+	font: bold 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#commentform input, #commentform textarea {
+	border: none;
+	padding: 5px;
+	width: 370px;
+	background: #3e3e3e;
+	color: #fff;
+	margin: 0px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	float: left;
+}
+
+#commentform input#skicka {
+	margin: 0px;
+	padding: 2px 5px;
+	width: auto;
+	background: #444;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#commentform label.error {
+	font-size: 10px;
+	background: #ff1493;
+	color: #fff;
+	width: 380px;
+	margin: 0px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+p#submit {
+	width: 57px;
+}
+
+/* ---------- Clearfix ---------- */
+
+.clearfix:after
+{
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */

@@ -3,14 +3,14 @@ layout: default
 name: page-work-single
 ---
 {% if page.link %}
-	
+
 <div id="postHeader" class="post-header">
 	<div class="post-header__inner">
 		<img class="post-header__img" src="/images/website-placeholder.jpg" alt="" />
 		<iframe class="post-header__iframe" data-src="http://{{page.link}}" src="" width="1000" height="610">
 	  		<p>Your browser does not support iframes.</p>
 		</iframe>
-	</div>	
+	</div>
 </div><!-- /.post-header -->
 
 {% endif%}
@@ -24,24 +24,26 @@ name: page-work-single
 		{% endif %}
 		<aside class="meta">
 			{% if page.link %}
-				<a class="link_highlight" href="http://{{page.link}}" target="_blank">{{page.link}}</a><br>
-			{% endif%}
-			{% if page.category %}
-				<b>Category: </b>{{page.category}} <br>
-			{% endif%}
-			{% if page.tags %}
-				<b>Tags:</b>
-				{% for tag in page.tags %}
-					<span>{{tag}}</span>, 
+				{% for link in page.link %}
+					<a class="link_highlight" href="http://{{link}}" target="_blank">{{link}}</a> |
 				{% endfor %}
 			{% endif%}
-			
 
-		</aside>				
+			{% if page.category %}
+				<!-- <span>{{page.category}} |</span> -->
+			{% endif%}
+			{% if page.tags %}
+				{% for tag in page.tags %}
+					<span>{{tag}}</span>,
+				{% endfor %}
+			{% endif%}
+
+
+		</aside>
 	</header>
 	<article class="columns-two">
 		{{ content }}
-	</article>	
+	</article>
 	<footer class="post-footer">
 	<!-- This is the prev link, newer posts -->
 	{% if page.next %}

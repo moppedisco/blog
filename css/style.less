@@ -38,7 +38,7 @@ a:hover {
 		.font-size(98);
 		line-height: 84px;
 		padding-right: 15px;
-		vertical-align: text-top;	
+		vertical-align: text-top;
 		font-family: "garamond-premier-pro-caption";
 		font-weight: 400;
 	}
@@ -64,7 +64,7 @@ a:hover {
 		transform: rotate(90deg) translateY(25px);
 		-webkit-transform: rotate(90deg) translateY(25px);
 		bottom: 10px;
-	}	
+	}
 
 	.site-nav__link {
 		color: #1560fb;
@@ -95,7 +95,7 @@ a:hover {
 		position: static;
 		width: 100%;
 		text-align: center;
-	}	
+	}
 
 	.page-work-single & {
 		display: none;
@@ -114,18 +114,18 @@ a:hover {
 	z-index: 3;
 	color: #000;
 	text-transform: uppercase;
-	font-weight: bold;	
+	font-weight: bold;
 	transform: rotate(-90deg) translateX(-100%);
 	-webkit-transform: rotate(-90deg) translateX(-100%);
-	transform-origin: 0 0;	
-	-webkit-transform-origin: 0 0;	
+	transform-origin: 0 0;
+	-webkit-transform-origin: 0 0;
 	.font-size(14);
 	letter-spacing: 2px;
 
 	@media (max-width: 800px) {
 		top: -70px;
 		left: -55px;
-	}	
+	}
 }
 
 .page-title {
@@ -144,14 +144,14 @@ a:hover {
 		text-align: center;
 		.page-work-single & {
 			display: none;
-		}		
+		}
 	}
 
 }
 
 .page-section {
 	margin: 130px auto 0;
-	max-width: 1024px;	
+	max-width: 1024px;
 
 	.page-work-single & {
 		margin-top: 70px;
@@ -160,7 +160,7 @@ a:hover {
 	@media (max-width: 1024px) {
 		padding: 0 30px;
 		margin-top: 30px;
-	}	
+	}
 }
 
 .page-section__intro {
@@ -175,6 +175,11 @@ a:hover {
 	@media (max-width: 1024px) {
 		width: 100%;
 		padding: 0;
+	}
+
+	h1 {
+		margin: 0 0 10px;
+		line-height: 1.2;
 	}
 }
 
@@ -248,7 +253,7 @@ a:hover {
 		//font-size: 14vh;
 		.first-row { margin: -30px auto 60px; }
 		.second-row { margin: 60px auto -30px; }
-	}			
+	}
 }
 
 .page-section--home h2 {
@@ -267,7 +272,7 @@ a:hover {
 		.font-size(18);
 		width: 100%;
 		padding: 0 30px;
-	}		
+	}
 }
 
 .page-section--shortbio {
@@ -282,7 +287,7 @@ a:hover {
 	column-count: 2;
 	-webkit-column-gap: 50px;
 	-moz-column-gap: 50px;
-	column-gap: 50px;	
+	column-gap: 50px;
 
 	@media (max-width: 800px) {
 		-moz-column-count: 1;
@@ -300,7 +305,7 @@ a:hover {
 	column-count: 3;
 	-webkit-column-gap: 50px;
 	-moz-column-gap: 50px;
-	column-gap: 50px;		
+	column-gap: 50px;
 
 	@media (max-width: 800px) {
 		-moz-column-count: 1;
@@ -358,7 +363,7 @@ a:hover {
 .content-box__subtitle,
 .content-box__tags {
 	.font-size(14,true);
-	text-transform: capitalize;
+	// text-transform: capitalize;
 }
 
 .content-box__img {
@@ -372,7 +377,7 @@ a:hover {
 		// opacity: 0.2;
 		@media (max-width: 800px) {
 			// opacity: 1;
-		}		
+		}
 	}
 
 	.content-box:hover & {
@@ -401,14 +406,14 @@ a:hover {
 	position: relative;
 	z-index: 1;
 	top: 0;
-	left: 0;	
+	left: 0;
 }
 
 .post-header__inner {
 	position: absolute;
 	top: 0;
 	-webkit-transform-origin: 0 0;
-	transform-origin: 0 0;	
+	transform-origin: 0 0;
 }
 
 .post-header__iframe {
@@ -418,7 +423,7 @@ a:hover {
 	width: 1003px;
 	height: 612px;
 	top: 20px;
-	left: 21px;	
+	left: 21px;
 	pointer-events: auto;
 	transform: matrix3d(0.792978043912176, -0.001187624750499, 0, -0.000001996007984031, -0.0198463211306682, 0.805175133309467, 0, -0.000024364702248863, 0, 0, 1, 0, 218, 95, 0, 1);
 	-webkit-transform: matrix3d(0.792978043912176, -0.001187624750499, 0, -0.000001996007984031, -0.0198463211306682, 0.805175133309467, 0, -0.000024364702248863, 0, 0, 1, 0, 218, 95, 0, 1);
@@ -433,6 +438,7 @@ a:hover {
 .post-header__img {
 	width: 1280px;
 	display: block;
+	width: 100%;
 }
 
 .contact-links {

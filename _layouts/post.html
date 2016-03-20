@@ -2,18 +2,25 @@
 layout: default
 name: page-work-single
 ---
-{% if page.link %}
+
 
 <div id="postHeader" class="post-header">
 	<div id="inner" class="post-header__inner">
-		<img class="post-header__img" src="/images/website-placeholder.jpg" alt="" />
-		<iframe class="post-header__iframe" data-src="http://{{page.link}}" src="" width="1000" height="610">
-	  		<p>Your browser does not support iframes.</p>
-		</iframe>
+		{% if page.link %}
+			<img class="post-header__img" src="/images/website-placeholder.jpg" alt="" />
+			<iframe class="post-header__iframe" data-src="http://{{page.link}}" src="" width="1000" height="610">
+		  		<p>Your browser does not support iframes.</p>
+			</iframe>
+
+		{% else %}
+
+			<img class="post-header__img" src="{{page.cover}}" alt="" />
+		{% endif %}
+
+
 	</div>
 </div><!-- /.post-header -->
 
-{% endif%}
 <section class="page-section">
 	<header class="page-section__intro">
 		<time class="post-date">{{ page.date | date: "%b %Y" }}</time>

@@ -5,7 +5,7 @@ name: page-work-single
 {% if page.link %}
 
 <div id="postHeader" class="post-header">
-	<div class="post-header__inner">
+	<div id="inner" class="post-header__inner">
 		<img class="post-header__img" src="/images/website-placeholder.jpg" alt="" />
 		<iframe class="post-header__iframe" data-src="http://{{page.link}}" src="" width="1000" height="610">
 	  		<p>Your browser does not support iframes.</p>
@@ -41,7 +41,7 @@ name: page-work-single
 
 		</aside>
 	</header>
-	<article class="columns-two">
+	<article class="single-column">
 		{{ content }}
 	</article>
 	<footer class="post-footer">

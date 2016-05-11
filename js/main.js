@@ -1,14 +1,19 @@
 (function(window){
   function init(){
-    $('[data-typer-targets]').typer();
+    if($('body').hasClass('page--Home')){
+      setTimeout(function(){
+        $('[data-typer-targets]').typer();
+      }, 1200);
+    }
+
+
     if(!Modernizr.touch){
       var url = $(".post-header__iframe").attr("data-src");
       $(".post-header__iframe").attr("src",url);
     }
-    // if($(".page-work-single").length){
-      postHeader();
-      console.log("asd");
-    // }
+
+    postHeader();
+
   }
 
   function postHeader(){
